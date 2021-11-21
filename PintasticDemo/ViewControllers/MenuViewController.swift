@@ -11,7 +11,7 @@ import Pintastic
 
 class MenuViewController: UITableViewController {
 
-    let decoratorFactory: DemoViewDecoratorFactory = DefaultDemoViewDecoratorFactory()
+    let decoratorFactory: ViewDecoratorFactory = DefaultViewDecoratorFactory()
 
     override func viewDidLoad() {
         super.viewDidLoad()

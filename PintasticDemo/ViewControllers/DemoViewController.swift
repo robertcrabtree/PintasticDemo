@@ -15,9 +15,9 @@ class DemoViewController: UIViewController {
     }
 
     private let config: Config
-    private let decorator: DemoViewDecorator
+    private let decorator: ViewDecorator
 
-    init(config: Config, decorator: DemoViewDecorator) {
+    init(config: Config, decorator: ViewDecorator) {
         self.config = config
         self.decorator = decorator
         super.init(nibName: nil, bundle: nil)

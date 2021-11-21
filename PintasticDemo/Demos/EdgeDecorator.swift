@@ -1,5 +1,5 @@
 //
-//  EdgeDemoViewDecorator.swift
+//  EdgeDecorator.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,7 +9,7 @@ import Foundation
 import Pintastic
 import UIKit
 
-struct EdgeDemoViewDecorator: DemoViewDecorator {
+struct EdgeDecorator: ViewDecorator {
     func decorateView(_ view: UIView) {
         makeDecorationView(.edgeDemoChildView, color: .systemOrange)
             .addToSuperview(view)

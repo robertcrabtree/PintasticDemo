@@ -1,5 +1,5 @@
 //
-//  TopAndBottomDemoViewDecorator.swift
+//  TopAndBottomDecorator.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,7 +9,7 @@ import Foundation
 import Pintastic
 import UIKit
 
-struct TopAndBottomDemoViewDecorator: DemoViewDecorator {
+struct TopAndBottomDecorator: ViewDecorator {
     func decorateView(_ view: UIView) {
         let top = makeDecorationView(.topAndBottomTopView, color: .systemOrange)
         let center = makeDecorationView(.topAndBottomCenterView, color: .systemGreen)

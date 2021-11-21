@@ -1,5 +1,5 @@
 //
-//  DemoViewDecorator.swift
+//  ViewDecorator.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-protocol DemoViewDecorator {
+protocol ViewDecorator {
     func decorateView(_ view: UIView)
 }
 
-extension DemoViewDecorator {
+extension ViewDecorator {
     func makeDecorationView(_ identifier: Accessibility, color: UIColor) -> UIView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
