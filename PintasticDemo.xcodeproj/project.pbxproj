@@ -126,7 +126,7 @@
 		D41E0351274A349E00AF1E8E /* PintasticDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D42D888F274A44DD0018B8CD /* Demos */,
+				D42D888F274A44DD0018B8CD /* ViewDecorators */,
 				D42D888A274A423C0018B8CD /* Accessibility */,
 				D42D8887274A399E0018B8CD /* Protocols */,
 				D42D887D274A367E0018B8CD /* ViewControllers */,
@@ -192,7 +192,7 @@
 			path = Accessibility;
 			sourceTree = "<group>";
 		};
-		D42D888F274A44DD0018B8CD /* Demos */ = {
+		D42D888F274A44DD0018B8CD /* ViewDecorators */ = {
 			isa = PBXGroup;
 			children = (
 				D42D8890274A44FB0018B8CD /* EdgeDecorator.swift */,
@@ -201,7 +201,7 @@
 				D42D889F274A79190018B8CD /* HorizontalAndVerticalCenterDecorator.swift */,
 				D42D88A1274A7AF40018B8CD /* SameWidthAndHeightDecorator.swift */,
 			);
-			path = Demos;
+			path = ViewDecorators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
