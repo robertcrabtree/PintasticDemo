@@ -190,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				D42D8893274A4B690018B8CD /* Accessibility.swift */,
-				D42D8897274A51060018B8CD /* DemoIdentifier.swift */,
 			);
 			path = Accessibility;
 			sourceTree = "<group>";
@@ -198,6 +197,7 @@
 		D42D888F274A44DD0018B8CD /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				D42D8897274A51060018B8CD /* DemoIdentifier.swift */,
 				D42D8890274A44FB0018B8CD /* EdgeDemo.swift */,
 				D42D88A4274A7DBF0018B8CD /* EqualWidthsAndHeightsDemo.swift */,
 				D42D8899274A58760018B8CD /* TopAndBottomDemo.swift */,
