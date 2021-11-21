@@ -59,7 +59,7 @@ extension UITableView {
 
 extension UITableViewCell {
     static func configure(menuCell: MenuCell, id: DemoIdentifier) -> UITableViewCell {
-        menuCell.testTitleLabel.text = id.title
+        menuCell.demoTitleLabel.text = id.title
         menuCell.accessibilityIdentifier = id.accessibility
         return menuCell
     }

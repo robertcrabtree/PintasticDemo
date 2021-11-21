@@ -11,7 +11,7 @@ import Pintastic
 
 class MenuCell: UITableViewCell, CellIdentifiable {
 
-    let testTitleLabel: UILabel = {
+    let demoTitleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -20,8 +20,8 @@ class MenuCell: UITableViewCell, CellIdentifiable {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
-        contentView.addSubview(testTitleLabel)
-        testTitleLabel
+        contentView.addSubview(demoTitleLabel)
+        demoTitleLabel
             .pin(to: contentView)
             .height(to: 44)
             .constraint(ofType: .height, handler: { constraint in
