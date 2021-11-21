@@ -1,5 +1,5 @@
 //
-//  HorizontalAndVerticalCenterDecorator.swift
+//  HorizontalAndVerticalCenterDemo.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 import Pintastic
 
-struct HorizontalAndVerticalCenterDecorator: ViewDecorator {
-    func decorateView(_ view: UIView) {
-        let container = makeDecorationView(.horizontalAndVerticalContainerView, color: .systemPink)
-        let nested = makeDecorationView(.horizontalAndVerticalNestedView, color: .systemPurple)
+struct HorizontalAndVerticalCenterDemo: Demo {
+    func pinViews(to view: UIView) {
+        let container = makeView(.horizontalAndVerticalContainerView, color: .systemPink)
+        let nested = makeView(.horizontalAndVerticalNestedView, color: .systemPurple)
 
         container
             .addToSuperview(view)

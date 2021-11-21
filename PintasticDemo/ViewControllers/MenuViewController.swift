@@ -11,7 +11,7 @@ import Pintastic
 
 class MenuViewController: UITableViewController {
 
-    let decoratorFactory: ViewDecoratorFactory = DefaultViewDecoratorFactory()
+    let demoFactory: DemoFactory = DefaultDemoFactory()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +45,7 @@ class MenuViewController: UITableViewController {
                 title: id.title,
                 navigationAccessibility: id.accessibility
             ),
-            decorator: decoratorFactory.makeDecorator(id: id)
+            demo: demoFactory.makeDemo(id: id)
         )
         show(controller, sender: self)
     }

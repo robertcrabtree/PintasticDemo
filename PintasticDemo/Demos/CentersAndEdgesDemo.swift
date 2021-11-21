@@ -1,5 +1,5 @@
 //
-//  CentersAndEdgesDecorator.swift
+//  CentersAndEdgesDemo.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,25 +9,25 @@ import Foundation
 import UIKit
 import Pintastic
 
-struct CentersAndEdgesDecorator: ViewDecorator {
-    func decorateView(_ view: UIView) {
-        let topLeft = makeDecorationView(
+struct CentersAndEdgesDemo: Demo {
+    func pinViews(to view: UIView) {
+        let topLeft = makeView(
             .centersAndEdgesTopLeftView,
             color: .systemRed.withAlphaComponent(0.5)
         )
-        let topRight = makeDecorationView(
+        let topRight = makeView(
             .centersAndEdgesTopRightView,
             color: .systemBlue.withAlphaComponent(0.5)
         )
-        let bottomRight = makeDecorationView(
+        let bottomRight = makeView(
             .centersAndEdgesBottomRightView,
             color: .systemGreen.withAlphaComponent(0.5)
         )
-        let bottomLeft = makeDecorationView(
+        let bottomLeft = makeView(
             .centersAndEdgesBottomLeftView,
             color: .systemYellow.withAlphaComponent(0.5)
         )
-        let center = makeDecorationView(
+        let center = makeView(
             .centersAndEdgesCenterView,
             color: .clear
         )

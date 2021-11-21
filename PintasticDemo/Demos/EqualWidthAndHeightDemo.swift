@@ -1,5 +1,5 @@
 //
-//  EqualWidthAndHeightDecorator.swift
+//  EqualWidthAndHeightDemo.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 import Pintastic
 
-struct EqualWidthAndHeightDecorator: ViewDecorator {
-    func decorateView(_ view: UIView) {
+struct EqualWidthAndHeightDemo: Demo {
+    func pinViews(to view: UIView) {
 
         let stack: UIStackView = {
             let stack = UIStackView()
@@ -26,8 +26,8 @@ struct EqualWidthAndHeightDecorator: ViewDecorator {
             .horizontalCenters()
             .activate()
 
-        let left = makeDecorationView(.equalWidthAndHeightLeftView, color: .systemYellow)
-        let right = makeDecorationView(.equalWidthAndHeightRightView, color: .systemPurple)
+        let left = makeView(.equalWidthAndHeightLeftView, color: .systemYellow)
+        let right = makeView(.equalWidthAndHeightRightView, color: .systemPurple)
 
         stack.addArrangedSubview(left)
         stack.addArrangedSubview(right)

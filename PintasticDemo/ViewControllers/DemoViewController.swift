@@ -15,11 +15,11 @@ class DemoViewController: UIViewController {
     }
 
     private let config: Config
-    private let decorator: ViewDecorator
+    private let demo: Demo
 
-    init(config: Config, decorator: ViewDecorator) {
+    init(config: Config, demo: Demo) {
         self.config = config
-        self.decorator = decorator
+        self.demo = demo
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -33,7 +33,7 @@ class DemoViewController: UIViewController {
         navigationController?
             .navigationBar
             .accessibilityIdentifier = config.navigationAccessibility
-        decorator.decorateView(view)
+        demo.pinViews(to: view)
         view.backgroundColor = .systemBackground
     }
 }

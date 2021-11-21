@@ -1,5 +1,5 @@
 //
-//  TopAndBottomDecorator.swift
+//  LeadingAndTrailingDemo.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,46 +9,45 @@ import Foundation
 import Pintastic
 import UIKit
 
-struct TopAndBottomDecorator: ViewDecorator {
-    func decorateView(_ view: UIView) {
-        let top = makeDecorationView(.topAndBottomTopView, color: .systemOrange)
-        let center = makeDecorationView(.topAndBottomCenterView, color: .systemGreen)
-        let bottom = makeDecorationView(.topAndBottomBottomView, color: .systemTeal)
+struct LeadingAndTrailingDemo: Demo {
+    func pinViews(to view: UIView) {
+        let left = makeView(.leadingAndTrailingLeftView, color: .systemOrange)
+        let center = makeView(.leadingAndTrailingCenterView, color: .systemGreen)
+        let right = makeView(.leadingAndTrailingRightView, color: .systemTeal)
 
-        top
+        left
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
             .widths(multiplier: 0.25)
-            .heights(multiplier: 0.25)
-            .horizontalCenters()
+            .widthToHeight()
+            .verticalCenters()
             .activate()
 
         center
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
             .widths(multiplier: 0.25)
-            .heights(multiplier: 0.25)
+            .widthToHeight()
             .verticalCenters()
             .horizontalCenters()
             .activate()
 
-        bottom
+        right
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
             .widths(multiplier: 0.25)
-            .heights(multiplier: 0.25)
-            .horizontalCenters()
+            .heightToWidth()
+            .verticalCenters()
             .activate()
 
-        top
+        left
             .pin(to: center)
-            .bottomToTopEdge(constant: -10)
+            .trailingToLeadingEdge(constant: -10)
             .activate()
 
-
-        bottom
+        right
             .pin(to: center)
-            .topToBottomEdge(constant: 10)
+            .leadingToTrailingEdge(constant: 10)
             .activate()
     }
 }

@@ -1,5 +1,5 @@
 //
-//  SameWidthAndHeightDecorator.swift
+//  SameWidthAndHeightDemo.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 import Pintastic
 
-struct SameWidthAndHeightDecorator: ViewDecorator {
-    func decorateView(_ view: UIView) {
-        makeDecorationView(.widthToHeightLeftView, color: .systemPurple)
+struct SameWidthAndHeightDemo: Demo {
+    func pinViews(to view: UIView) {
+        makeView(.widthToHeightLeftView, color: .systemPurple)
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
             .topEdges(constant: 20)
@@ -19,7 +19,7 @@ struct SameWidthAndHeightDecorator: ViewDecorator {
             .widths(multiplier: 0.25)
             .widthToHeight(multiplier: 2.0)
             .activate()
-        makeDecorationView(.widthToHeightRightView, color: .systemCyan)
+        makeView(.widthToHeightRightView, color: .systemCyan)
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
             .bottomEdges(constant: -20)
