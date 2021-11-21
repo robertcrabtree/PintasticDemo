@@ -14,6 +14,23 @@
 		D41E036A274A34A200AF1E8E /* PintasticDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E0369274A34A200AF1E8E /* PintasticDemoTests.swift */; };
 		D41E0374274A34A200AF1E8E /* PintasticDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E0373274A34A200AF1E8E /* PintasticDemoUITests.swift */; };
 		D41E0376274A34A200AF1E8E /* PintasticDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E0375274A34A200AF1E8E /* PintasticDemoUITestsLaunchTests.swift */; };
+		D42D887F274A36A70018B8CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D887E274A36A70018B8CD /* MenuViewController.swift */; };
+		D42D8881274A37AA0018B8CD /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D8880274A37AA0018B8CD /* MenuCell.swift */; };
+		D42D8886274A38E20018B8CD /* Pintastic in Frameworks */ = {isa = PBXBuildFile; productRef = D42D8885274A38E20018B8CD /* Pintastic */; };
+		D42D8889274A39B20018B8CD /* CellIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D8888274A39B20018B8CD /* CellIdentifiable.swift */; };
+		D42D888E274A43A30018B8CD /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D888D274A43A30018B8CD /* Demo.swift */; };
+		D42D8891274A44FB0018B8CD /* EdgeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D8890274A44FB0018B8CD /* EdgeDemo.swift */; };
+		D42D8894274A4B690018B8CD /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D8893274A4B690018B8CD /* Accessibility.swift */; };
+		D42D8896274A4C7A0018B8CD /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D8895274A4C7A0018B8CD /* DemoViewController.swift */; };
+		D42D8898274A51060018B8CD /* DemoIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D8897274A51060018B8CD /* DemoIdentifier.swift */; };
+		D42D889A274A58760018B8CD /* TopToBottomDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D8899274A58760018B8CD /* TopToBottomDemo.swift */; };
+		D42D889C274A67320018B8CD /* DemoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D889B274A67320018B8CD /* DemoFactory.swift */; };
+		D42D889E274A73840018B8CD /* LeadingToTrailingDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D889D274A73840018B8CD /* LeadingToTrailingDemo.swift */; };
+		D42D88A0274A79190018B8CD /* HorizontalAndVerticalCenterDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D889F274A79190018B8CD /* HorizontalAndVerticalCenterDemo.swift */; };
+		D42D88A2274A7AF40018B8CD /* WidthToHeightDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A1274A7AF40018B8CD /* WidthToHeightDemo.swift */; };
+		D42D88A5274A7DBF0018B8CD /* EqualWidthsAndHeightsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A4274A7DBF0018B8CD /* EqualWidthsAndHeightsDemo.swift */; };
+		D42D88A7274A82FF0018B8CD /* CentersToEdgesDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A6274A82FF0018B8CD /* CentersToEdgesDemo.swift */; };
+		D4C7D92A274AA2E800646A4F /* CustomConstraintDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C7D929274AA2E800646A4F /* CustomConstraintDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +63,22 @@
 		D41E0373274A34A200AF1E8E /* PintasticDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticDemoUITests.swift; sourceTree = "<group>"; };
 		D41E0375274A34A200AF1E8E /* PintasticDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D41E0382274A351D00AF1E8E /* Pintastic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Pintastic; path = ../Pintastic; sourceTree = "<group>"; };
+		D42D887E274A36A70018B8CD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D42D8880274A37AA0018B8CD /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		D42D8888274A39B20018B8CD /* CellIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiable.swift; sourceTree = "<group>"; };
+		D42D888D274A43A30018B8CD /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
+		D42D8890274A44FB0018B8CD /* EdgeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeDemo.swift; sourceTree = "<group>"; };
+		D42D8893274A4B690018B8CD /* Accessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessibility.swift; sourceTree = "<group>"; };
+		D42D8895274A4C7A0018B8CD /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		D42D8897274A51060018B8CD /* DemoIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoIdentifier.swift; sourceTree = "<group>"; };
+		D42D8899274A58760018B8CD /* TopToBottomDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopToBottomDemo.swift; sourceTree = "<group>"; };
+		D42D889B274A67320018B8CD /* DemoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFactory.swift; sourceTree = "<group>"; };
+		D42D889D274A73840018B8CD /* LeadingToTrailingDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingToTrailingDemo.swift; sourceTree = "<group>"; };
+		D42D889F274A79190018B8CD /* HorizontalAndVerticalCenterDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalAndVerticalCenterDemo.swift; sourceTree = "<group>"; };
+		D42D88A1274A7AF40018B8CD /* WidthToHeightDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidthToHeightDemo.swift; sourceTree = "<group>"; };
+		D42D88A4274A7DBF0018B8CD /* EqualWidthsAndHeightsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualWidthsAndHeightsDemo.swift; sourceTree = "<group>"; };
+		D42D88A6274A82FF0018B8CD /* CentersToEdgesDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentersToEdgesDemo.swift; sourceTree = "<group>"; };
+		D4C7D929274AA2E800646A4F /* CustomConstraintDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomConstraintDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42D8886274A38E20018B8CD /* Pintastic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +115,7 @@
 				D41E0368274A34A200AF1E8E /* PintasticDemoTests */,
 				D41E0372274A34A200AF1E8E /* PintasticDemoUITests */,
 				D41E0350274A349E00AF1E8E /* Products */,
+				D42D8882274A38990018B8CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +132,14 @@
 		D41E0351274A349E00AF1E8E /* PintasticDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D41E0352274A349E00AF1E8E /* AppDelegate.swift */,
-				D41E0354274A349E00AF1E8E /* SceneDelegate.swift */,
+				D42D888A274A423C0018B8CD /* Accessibility */,
+				D42D88A3274A7D460018B8CD /* App */,
 				D41E035B274A34A200AF1E8E /* Assets.xcassets */,
-				D41E035D274A34A200AF1E8E /* LaunchScreen.storyboard */,
+				D42D888F274A44DD0018B8CD /* Demos */,
 				D41E0360274A34A200AF1E8E /* Info.plist */,
+				D41E035D274A34A200AF1E8E /* LaunchScreen.storyboard */,
+				D42D8887274A399E0018B8CD /* Protocols */,
+				D42D887D274A367E0018B8CD /* ViewControllers */,
 			);
 			path = PintasticDemo;
 			sourceTree = "<group>";
@@ -123,6 +161,74 @@
 			path = PintasticDemoUITests;
 			sourceTree = "<group>";
 		};
+		D42D887D274A367E0018B8CD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D42D8895274A4C7A0018B8CD /* DemoViewController.swift */,
+				D42D887E274A36A70018B8CD /* MenuViewController.swift */,
+				D42D8880274A37AA0018B8CD /* MenuCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D42D8882274A38990018B8CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D42D8887274A399E0018B8CD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D42D8888274A39B20018B8CD /* CellIdentifiable.swift */,
+				D42D888D274A43A30018B8CD /* Demo.swift */,
+				D42D889B274A67320018B8CD /* DemoFactory.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D42D888A274A423C0018B8CD /* Accessibility */ = {
+			isa = PBXGroup;
+			children = (
+				D42D8893274A4B690018B8CD /* Accessibility.swift */,
+			);
+			path = Accessibility;
+			sourceTree = "<group>";
+		};
+		D42D888F274A44DD0018B8CD /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				D42D88A6274A82FF0018B8CD /* CentersToEdgesDemo.swift */,
+				D4C7D929274AA2E800646A4F /* CustomConstraintDemo.swift */,
+				D42D8890274A44FB0018B8CD /* EdgeDemo.swift */,
+				D42D88A4274A7DBF0018B8CD /* EqualWidthsAndHeightsDemo.swift */,
+				D42D889F274A79190018B8CD /* HorizontalAndVerticalCenterDemo.swift */,
+				D42D889D274A73840018B8CD /* LeadingToTrailingDemo.swift */,
+				D42D8899274A58760018B8CD /* TopToBottomDemo.swift */,
+				D42D88A1274A7AF40018B8CD /* WidthToHeightDemo.swift */,
+				D4C7D92B274AA9F300646A4F /* Identifier */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		D42D88A3274A7D460018B8CD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D41E0352274A349E00AF1E8E /* AppDelegate.swift */,
+				D41E0354274A349E00AF1E8E /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D4C7D92B274AA9F300646A4F /* Identifier */ = {
+			isa = PBXGroup;
+			children = (
+				D42D8897274A51060018B8CD /* DemoIdentifier.swift */,
+			);
+			path = Identifier;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +245,9 @@
 			dependencies = (
 			);
 			name = PintasticDemo;
+			packageProductDependencies = (
+				D42D8885274A38E20018B8CD /* Pintastic */,
+			);
 			productName = PintasticDemo;
 			productReference = D41E034F274A349E00AF1E8E /* PintasticDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -253,8 +362,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42D8891274A44FB0018B8CD /* EdgeDemo.swift in Sources */,
+				D42D889C274A67320018B8CD /* DemoFactory.swift in Sources */,
+				D42D8889274A39B20018B8CD /* CellIdentifiable.swift in Sources */,
+				D42D88A0274A79190018B8CD /* HorizontalAndVerticalCenterDemo.swift in Sources */,
+				D42D88A5274A7DBF0018B8CD /* EqualWidthsAndHeightsDemo.swift in Sources */,
+				D42D889E274A73840018B8CD /* LeadingToTrailingDemo.swift in Sources */,
+				D42D88A7274A82FF0018B8CD /* CentersToEdgesDemo.swift in Sources */,
 				D41E0353274A349E00AF1E8E /* AppDelegate.swift in Sources */,
+				D42D88A2274A7AF40018B8CD /* WidthToHeightDemo.swift in Sources */,
+				D42D8896274A4C7A0018B8CD /* DemoViewController.swift in Sources */,
+				D4C7D92A274AA2E800646A4F /* CustomConstraintDemo.swift in Sources */,
+				D42D887F274A36A70018B8CD /* MenuViewController.swift in Sources */,
+				D42D8881274A37AA0018B8CD /* MenuCell.swift in Sources */,
+				D42D888E274A43A30018B8CD /* Demo.swift in Sources */,
+				D42D8894274A4B690018B8CD /* Accessibility.swift in Sources */,
 				D41E0355274A349E00AF1E8E /* SceneDelegate.swift in Sources */,
+				D42D889A274A58760018B8CD /* TopToBottomDemo.swift in Sources */,
+				D42D8898274A51060018B8CD /* DemoIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +733,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D42D8885274A38E20018B8CD /* Pintastic */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Pintastic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D41E0347274A349E00AF1E8E /* Project object */;
 }
