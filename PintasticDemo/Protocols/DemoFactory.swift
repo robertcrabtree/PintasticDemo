@@ -23,7 +23,7 @@ struct DefaultDemoFactory: DemoFactory {
         case .horizontalAndVerticalCenter:
             return HorizontalAndVerticalCenterDemo()
         case .widthToHeight:
-            return SameWidthAndHeightDemo()
+            return WidthToHeightDemo()
         case .equalWidthAndHeight:
             return EqualWidthAndHeightDemo()
         case .centersAndEdges:

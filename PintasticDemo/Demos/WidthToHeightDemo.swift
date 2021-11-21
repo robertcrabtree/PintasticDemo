@@ -1,5 +1,5 @@
 //
-//  SameWidthAndHeightDemo.swift
+//  WidthToHeightDemo.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -14,7 +14,7 @@ extension Accessibility {
     static let widthToHeightRightView = "widthToHeightRightView"
 }
 
-struct SameWidthAndHeightDemo: Demo {
+struct WidthToHeightDemo: Demo {
     func pinViews(to view: UIView) {
         makeView(.widthToHeightLeftView, color: .systemPurple)
             .addToSuperview(view)
