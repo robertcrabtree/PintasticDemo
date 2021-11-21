@@ -26,4 +26,10 @@ enum Accessibility: String {
 
     case equalWidthAndHeightLeftView
     case equalWidthAndHeightRightView
+
+    case centersAndEdgesTopLeftView
+    case centersAndEdgesTopRightView
+    case centersAndEdgesBottomRightView
+    case centersAndEdgesBottomLeftView
+    case centersAndEdgesCenterView
 }

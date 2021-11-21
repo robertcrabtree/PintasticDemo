@@ -15,6 +15,7 @@ enum DemoIdentifier: String, CaseIterable {
     case horizontalAndVerticalCenter
     case sameWidthAndHeight
     case equalWidthAndHeight
+    case centersAndEdges
 }
 
 extension DemoIdentifier {

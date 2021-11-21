@@ -29,6 +29,7 @@
 		D42D88A0274A79190018B8CD /* HorizontalAndVerticalCenterDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D889F274A79190018B8CD /* HorizontalAndVerticalCenterDecorator.swift */; };
 		D42D88A2274A7AF40018B8CD /* SameWidthAndHeightDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A1274A7AF40018B8CD /* SameWidthAndHeightDecorator.swift */; };
 		D42D88A5274A7DBF0018B8CD /* EqualWidthAndHeightDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A4274A7DBF0018B8CD /* EqualWidthAndHeightDecorator.swift */; };
+		D42D88A7274A82FF0018B8CD /* CentersAndEdgesDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A6274A82FF0018B8CD /* CentersAndEdgesDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		D42D889F274A79190018B8CD /* HorizontalAndVerticalCenterDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalAndVerticalCenterDecorator.swift; sourceTree = "<group>"; };
 		D42D88A1274A7AF40018B8CD /* SameWidthAndHeightDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SameWidthAndHeightDecorator.swift; sourceTree = "<group>"; };
 		D42D88A4274A7DBF0018B8CD /* EqualWidthAndHeightDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualWidthAndHeightDecorator.swift; sourceTree = "<group>"; };
+		D42D88A6274A82FF0018B8CD /* CentersAndEdgesDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentersAndEdgesDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 				D42D889D274A73840018B8CD /* LeadingAndTrailingDecorator.swift */,
 				D42D889F274A79190018B8CD /* HorizontalAndVerticalCenterDecorator.swift */,
 				D42D88A1274A7AF40018B8CD /* SameWidthAndHeightDecorator.swift */,
+				D42D88A6274A82FF0018B8CD /* CentersAndEdgesDecorator.swift */,
 			);
 			path = ViewDecorators;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				D42D88A0274A79190018B8CD /* HorizontalAndVerticalCenterDecorator.swift in Sources */,
 				D42D88A5274A7DBF0018B8CD /* EqualWidthAndHeightDecorator.swift in Sources */,
 				D42D889E274A73840018B8CD /* LeadingAndTrailingDecorator.swift in Sources */,
+				D42D88A7274A82FF0018B8CD /* CentersAndEdgesDecorator.swift in Sources */,
 				D41E0353274A349E00AF1E8E /* AppDelegate.swift in Sources */,
 				D42D88A2274A7AF40018B8CD /* SameWidthAndHeightDecorator.swift in Sources */,
 				D42D8896274A4C7A0018B8CD /* DemoViewController.swift in Sources */,
