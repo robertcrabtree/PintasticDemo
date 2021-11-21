@@ -24,6 +24,8 @@ struct DefaultViewDecoratorFactory: ViewDecoratorFactory {
             return HorizontalAndVerticalCenterDecorator()
         case .sameWidthAndHeight:
             return SameWidthAndHeightDecorator()
+        case .equalWidthAndHeight:
+            return EqualWidthAndHeightDecorator()
         }
     }
 }

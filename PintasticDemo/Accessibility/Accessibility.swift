@@ -23,4 +23,7 @@ enum Accessibility: String {
 
     case sameWidthAndHeightLeftView
     case sameWidthAndHeightRightView
+
+    case equalWidthAndHeightLeftView
+    case equalWidthAndHeightRightView
 }
