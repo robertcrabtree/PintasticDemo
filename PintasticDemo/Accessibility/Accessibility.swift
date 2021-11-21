@@ -22,8 +22,8 @@ enum Accessibility: String {
     case horizontalAndVerticalContainerView
     case horizontalAndVerticalNestedView
 
-    case sameWidthAndHeightLeftView
-    case sameWidthAndHeightRightView
+    case widthToHeightLeftView
+    case widthToHeightRightView
 
     case equalWidthAndHeightLeftView
     case equalWidthAndHeightRightView

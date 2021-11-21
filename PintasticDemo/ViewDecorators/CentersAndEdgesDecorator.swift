@@ -35,15 +35,15 @@ struct CentersAndEdgesDecorator: ViewDecorator {
         topLeft
             .addToSuperview(view)
             .pin(to: view)
-            .equalWidths(multiplier: 0.25)
-            .sameWidthAndHeight()
+            .widths(multiplier: 0.25)
+            .widthToHeight()
             .activate()
 
         topRight
             .addToSuperview(view)
             .pin(to: topLeft)
-            .equalWidths()
-            .equalHeights()
+            .widths()
+            .heights()
             .leadingEdgeToCenter()
             .topEdges()
             .activate()
@@ -51,8 +51,8 @@ struct CentersAndEdgesDecorator: ViewDecorator {
         bottomRight
             .addToSuperview(view)
             .pin(to: topRight)
-            .equalWidths()
-            .equalHeights()
+            .widths()
+            .heights()
             .leadingEdges()
             .topEdgeToCenter()
             .activate()
@@ -60,8 +60,8 @@ struct CentersAndEdgesDecorator: ViewDecorator {
         bottomLeft
             .addToSuperview(view)
             .pin(to: bottomRight)
-            .equalWidths()
-            .equalHeights()
+            .widths()
+            .heights()
             .trailingEdgeToCenter()
             .bottomEdges()
             .activate()
@@ -75,8 +75,8 @@ struct CentersAndEdgesDecorator: ViewDecorator {
 
         center
             .pin(to: topLeft)
-            .equalWidths(multiplier: 0.5)
-            .equalHeights(multiplier: 0.5)
+            .widths(multiplier: 0.5)
+            .heights(multiplier: 0.5)
             .leadingEdgeToCenter()
             .topEdgeToCenter()
             .activate()

@@ -22,7 +22,7 @@ struct DefaultViewDecoratorFactory: ViewDecoratorFactory {
             return LeadingAndTrailingDecorator()
         case .horizontalAndVerticalCenter:
             return HorizontalAndVerticalCenterDecorator()
-        case .sameWidthAndHeight:
+        case .widthToHeight:
             return SameWidthAndHeightDecorator()
         case .equalWidthAndHeight:
             return EqualWidthAndHeightDecorator()

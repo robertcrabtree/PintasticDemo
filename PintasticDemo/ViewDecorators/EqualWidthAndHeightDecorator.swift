@@ -34,14 +34,14 @@ struct EqualWidthAndHeightDecorator: ViewDecorator {
 
         left
             .pin(to: view)
-            .equalWidths(multiplier: 0.25)
-            .equalHeights(multiplier: 0.25)
+            .widths(multiplier: 0.25)
+            .heights(multiplier: 0.25)
             .activate()
 
         right
             .pin(to: left)
-            .equalWidths()
-            .equalHeights()
+            .widths()
+            .heights()
             .activate()
     }
 }

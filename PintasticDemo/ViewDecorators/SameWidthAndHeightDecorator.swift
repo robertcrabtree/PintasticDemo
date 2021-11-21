@@ -11,21 +11,21 @@ import Pintastic
 
 struct SameWidthAndHeightDecorator: ViewDecorator {
     func decorateView(_ view: UIView) {
-        makeDecorationView(.sameWidthAndHeightLeftView, color: .systemPurple)
+        makeDecorationView(.widthToHeightLeftView, color: .systemPurple)
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
             .topEdges(constant: 20)
             .horizontalCenters()
-            .equalWidths(multiplier: 0.25)
-            .sameWidthAndHeight(multiplier: 2.0)
+            .widths(multiplier: 0.25)
+            .widthToHeight(multiplier: 2.0)
             .activate()
-        makeDecorationView(.sameWidthAndHeightRightView, color: .systemCyan)
+        makeDecorationView(.widthToHeightRightView, color: .systemCyan)
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
             .bottomEdges(constant: -20)
             .horizontalCenters()
-            .equalWidths(multiplier: 0.25)
-            .sameHeightAndWidth(multiplier: 0.5)
+            .widths(multiplier: 0.25)
+            .heightToWidth(multiplier: 0.5)
             .activate()
     }
 }

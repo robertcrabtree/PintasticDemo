@@ -13,7 +13,7 @@ enum DemoIdentifier: String, CaseIterable {
     case topAndBottom
     case leadingAndTrailing
     case horizontalAndVerticalCenter
-    case sameWidthAndHeight
+    case widthToHeight
     case equalWidthAndHeight
     case centersAndEdges
 }

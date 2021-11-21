@@ -18,16 +18,16 @@ struct LeadingAndTrailingDecorator: ViewDecorator {
         left
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
-            .equalWidths(multiplier: 0.25)
-            .sameWidthAndHeight()
+            .widths(multiplier: 0.25)
+            .widthToHeight()
             .verticalCenters()
             .activate()
 
         center
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
-            .equalWidths(multiplier: 0.25)
-            .sameWidthAndHeight()
+            .widths(multiplier: 0.25)
+            .widthToHeight()
             .verticalCenters()
             .horizontalCenters()
             .activate()
@@ -35,8 +35,8 @@ struct LeadingAndTrailingDecorator: ViewDecorator {
         right
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
-            .equalWidths(multiplier: 0.25)
-            .sameHeightAndWidth()
+            .widths(multiplier: 0.25)
+            .heightToWidth()
             .verticalCenters()
             .activate()
 
