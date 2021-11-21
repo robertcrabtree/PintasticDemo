@@ -21,6 +21,7 @@ struct EqualWidthsAndHeightsDemo: Demo {
             let stack = UIStackView()
             stack.translatesAutoresizingMaskIntoConstraints = false
             stack.axis = .horizontal
+            stack.spacing = 20.0
             return stack
         }()
 

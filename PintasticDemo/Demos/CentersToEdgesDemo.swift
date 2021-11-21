@@ -21,23 +21,23 @@ struct CentersToEdgesDemo: Demo {
     func pinViews(to view: UIView) {
         let topLeft = makeView(
             .centersToEdgesTopLeftView,
-            color: .systemRed.withAlphaComponent(0.5)
+            color: .systemRed
         )
         let topRight = makeView(
             .centersToEdgesTopRightView,
-            color: .systemBlue.withAlphaComponent(0.5)
+            color: .systemBlue
         )
         let bottomRight = makeView(
             .centersToEdgesBottomRightView,
-            color: .systemGreen.withAlphaComponent(0.5)
+            color: .systemGreen
         )
         let bottomLeft = makeView(
             .centersToEdgesBottomLeftView,
-            color: .systemYellow.withAlphaComponent(0.5)
+            color: .systemYellow
         )
         let center = makeView(
             .centersToEdgesCenterView,
-            color: .clear
+            color: .systemBrown
         )
 
         topLeft

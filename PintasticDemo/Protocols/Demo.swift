@@ -17,7 +17,7 @@ extension Demo {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.accessibilityIdentifier = identifier
-        view.backgroundColor = color
+        view.backgroundColor = color.withAlphaComponent(0.5)
         return view
     }
 }
