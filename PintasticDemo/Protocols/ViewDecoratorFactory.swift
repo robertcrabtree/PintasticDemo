@@ -20,6 +20,8 @@ struct DefaultViewDecoratorFactory: ViewDecoratorFactory {
             return TopAndBottomDecorator()
         case .leadingAndTrailing:
             return LeadingAndTrailingDecorator()
+        case .horizontalAndVerticalCenter:
+            return HorizontalAndVerticalCenterDecorator()
         }
     }
 }

@@ -18,4 +18,6 @@ enum Accessibility: String {
     case leadingAndTrailingLeftView
     case leadingAndTrailingCenterView
     case leadingAndTrailingRightView
+
+    case horizontalAndVerticalCenterView
 }

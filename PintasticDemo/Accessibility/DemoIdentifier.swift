@@ -12,6 +12,7 @@ enum DemoIdentifier: String, CaseIterable {
     case edge
     case topAndBottom
     case leadingAndTrailing
+    case horizontalAndVerticalCenter
 }
 
 extension DemoIdentifier {
