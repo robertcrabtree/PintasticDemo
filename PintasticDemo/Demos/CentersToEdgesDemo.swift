@@ -1,5 +1,5 @@
 //
-//  CentersAndEdgesDemo.swift
+//  CentersToEdgesDemo.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -10,33 +10,33 @@ import UIKit
 import Pintastic
 
 extension Accessibility {
-    static let centersAndEdgesTopLeftView = "centersAndEdgesTopLeftView"
-    static let centersAndEdgesTopRightView = "centersAndEdgesTopRightView"
-    static let centersAndEdgesBottomRightView = "centersAndEdgesBottomRightView"
-    static let centersAndEdgesBottomLeftView = "centersAndEdgesBottomLeftView"
-    static let centersAndEdgesCenterView = "centersAndEdgesCenterView"
+    static let centersToEdgesTopLeftView = "centersToEdgesTopLeftView"
+    static let centersToEdgesTopRightView = "centersToEdgesTopRightView"
+    static let centersToEdgesBottomRightView = "centersToEdgesBottomRightView"
+    static let centersToEdgesBottomLeftView = "centersToEdgesBottomLeftView"
+    static let centersToEdgesCenterView = "centersToEdgesCenterView"
 }
 
-struct CentersAndEdgesDemo: Demo {
+struct CentersToEdgesDemo: Demo {
     func pinViews(to view: UIView) {
         let topLeft = makeView(
-            .centersAndEdgesTopLeftView,
+            .centersToEdgesTopLeftView,
             color: .systemRed.withAlphaComponent(0.5)
         )
         let topRight = makeView(
-            .centersAndEdgesTopRightView,
+            .centersToEdgesTopRightView,
             color: .systemBlue.withAlphaComponent(0.5)
         )
         let bottomRight = makeView(
-            .centersAndEdgesBottomRightView,
+            .centersToEdgesBottomRightView,
             color: .systemGreen.withAlphaComponent(0.5)
         )
         let bottomLeft = makeView(
-            .centersAndEdgesBottomLeftView,
+            .centersToEdgesBottomLeftView,
             color: .systemYellow.withAlphaComponent(0.5)
         )
         let center = makeView(
-            .centersAndEdgesCenterView,
+            .centersToEdgesCenterView,
             color: .clear
         )
 

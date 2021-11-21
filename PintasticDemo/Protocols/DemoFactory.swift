@@ -24,10 +24,10 @@ struct DefaultDemoFactory: DemoFactory {
             return HorizontalAndVerticalCenterDemo()
         case .widthToHeight:
             return WidthToHeightDemo()
-        case .equalWidthAndHeight:
-            return EqualWidthAndHeightDemo()
-        case .centersAndEdges:
-            return CentersAndEdgesDemo()
+        case .equalWidthsAndHeights:
+            return EqualWidthsAndHeightsDemo()
+        case .centersToEdges:
+            return CentersToEdgesDemo()
         }
     }
 }

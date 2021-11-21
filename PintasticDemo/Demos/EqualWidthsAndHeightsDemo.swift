@@ -1,5 +1,5 @@
 //
-//  EqualWidthAndHeightDemo.swift
+//  EqualWidthsAndHeightsDemo.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -10,11 +10,11 @@ import UIKit
 import Pintastic
 
 extension Accessibility {
-    static let equalWidthAndHeightLeftView = "equalWidthAndHeightLeftView"
-    static let equalWidthAndHeightRightView = "equalWidthAndHeightRightView"
+    static let equalWidthsAndHeightsLeftView = "equalWidthsAndHeightsLeftView"
+    static let equalWidthsAndHeightsRightView = "equalWidthsAndHeightsRightView"
 }
 
-struct EqualWidthAndHeightDemo: Demo {
+struct EqualWidthsAndHeightsDemo: Demo {
     func pinViews(to view: UIView) {
 
         let stack: UIStackView = {
@@ -31,8 +31,8 @@ struct EqualWidthAndHeightDemo: Demo {
             .horizontalCenters()
             .activate()
 
-        let left = makeView(.equalWidthAndHeightLeftView, color: .systemYellow)
-        let right = makeView(.equalWidthAndHeightRightView, color: .systemPurple)
+        let left = makeView(.equalWidthsAndHeightsLeftView, color: .systemYellow)
+        let right = makeView(.equalWidthsAndHeightsRightView, color: .systemPurple)
 
         stack.addArrangedSubview(left)
         stack.addArrangedSubview(right)
