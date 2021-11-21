@@ -16,7 +16,7 @@ extension Demo {
     func makeView(_ identifier: Accessibility, color: UIColor) -> UIView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.accessibilityIdentifier = identifier.rawValue
+        view.accessibilityIdentifier = identifier
         view.backgroundColor = color
         return view
     }

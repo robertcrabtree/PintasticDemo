@@ -9,6 +9,11 @@ import Foundation
 import UIKit
 import Pintastic
 
+extension Accessibility {
+    static let horizontalAndVerticalContainerView = "horizontalAndVerticalContainerView"
+    static let horizontalAndVerticalNestedView = "horizontalAndVerticalNestedView"
+}
+
 struct HorizontalAndVerticalCenterDemo: Demo {
     func pinViews(to view: UIView) {
         let container = makeView(.horizontalAndVerticalContainerView, color: .systemPink)

@@ -7,30 +7,4 @@
 
 import Foundation
 
-enum Accessibility: String {
-
-    case edgeDemoChildView
-
-    case topAndBottomTopView
-    case topAndBottomCenterView
-    case topAndBottomBottomView
-
-    case leadingAndTrailingLeftView
-    case leadingAndTrailingCenterView
-    case leadingAndTrailingRightView
-
-    case horizontalAndVerticalContainerView
-    case horizontalAndVerticalNestedView
-
-    case widthToHeightLeftView
-    case widthToHeightRightView
-
-    case equalWidthAndHeightLeftView
-    case equalWidthAndHeightRightView
-
-    case centersAndEdgesTopLeftView
-    case centersAndEdgesTopRightView
-    case centersAndEdgesBottomRightView
-    case centersAndEdgesBottomLeftView
-    case centersAndEdgesCenterView
-}
+typealias Accessibility = String

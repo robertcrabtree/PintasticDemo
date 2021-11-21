@@ -9,6 +9,12 @@ import Foundation
 import Pintastic
 import UIKit
 
+extension Accessibility {
+    static let leadingAndTrailingLeftView = "leadingAndTrailingLeftView"
+    static let leadingAndTrailingCenterView = "leadingAndTrailingCenterView"
+    static let leadingAndTrailingRightView = "leadingAndTrailingRightView"
+}
+
 struct LeadingAndTrailingDemo: Demo {
     func pinViews(to view: UIView) {
         let left = makeView(.leadingAndTrailingLeftView, color: .systemOrange)

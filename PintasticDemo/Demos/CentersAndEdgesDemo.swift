@@ -9,6 +9,14 @@ import Foundation
 import UIKit
 import Pintastic
 
+extension Accessibility {
+    static let centersAndEdgesTopLeftView = "centersAndEdgesTopLeftView"
+    static let centersAndEdgesTopRightView = "centersAndEdgesTopRightView"
+    static let centersAndEdgesBottomRightView = "centersAndEdgesBottomRightView"
+    static let centersAndEdgesBottomLeftView = "centersAndEdgesBottomLeftView"
+    static let centersAndEdgesCenterView = "centersAndEdgesCenterView"
+}
+
 struct CentersAndEdgesDemo: Demo {
     func pinViews(to view: UIView) {
         let topLeft = makeView(
