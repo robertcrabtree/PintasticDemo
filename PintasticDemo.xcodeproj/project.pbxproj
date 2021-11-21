@@ -30,6 +30,7 @@
 		D42D88A2274A7AF40018B8CD /* WidthToHeightDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A1274A7AF40018B8CD /* WidthToHeightDemo.swift */; };
 		D42D88A5274A7DBF0018B8CD /* EqualWidthsAndHeightsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A4274A7DBF0018B8CD /* EqualWidthsAndHeightsDemo.swift */; };
 		D42D88A7274A82FF0018B8CD /* CentersToEdgesDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A6274A82FF0018B8CD /* CentersToEdgesDemo.swift */; };
+		D4C7D92A274AA2E800646A4F /* CustomConstraintDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C7D929274AA2E800646A4F /* CustomConstraintDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		D42D88A1274A7AF40018B8CD /* WidthToHeightDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidthToHeightDemo.swift; sourceTree = "<group>"; };
 		D42D88A4274A7DBF0018B8CD /* EqualWidthsAndHeightsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualWidthsAndHeightsDemo.swift; sourceTree = "<group>"; };
 		D42D88A6274A82FF0018B8CD /* CentersToEdgesDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentersToEdgesDemo.swift; sourceTree = "<group>"; };
+		D4C7D929274AA2E800646A4F /* CustomConstraintDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomConstraintDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,14 +199,15 @@
 		D42D888F274A44DD0018B8CD /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				D42D88A6274A82FF0018B8CD /* CentersToEdgesDemo.swift */,
+				D4C7D929274AA2E800646A4F /* CustomConstraintDemo.swift */,
 				D42D8897274A51060018B8CD /* DemoIdentifier.swift */,
 				D42D8890274A44FB0018B8CD /* EdgeDemo.swift */,
 				D42D88A4274A7DBF0018B8CD /* EqualWidthsAndHeightsDemo.swift */,
-				D42D8899274A58760018B8CD /* TopToBottomDemo.swift */,
-				D42D889D274A73840018B8CD /* LeadingToTrailingDemo.swift */,
 				D42D889F274A79190018B8CD /* HorizontalAndVerticalCenterDemo.swift */,
+				D42D889D274A73840018B8CD /* LeadingToTrailingDemo.swift */,
+				D42D8899274A58760018B8CD /* TopToBottomDemo.swift */,
 				D42D88A1274A7AF40018B8CD /* WidthToHeightDemo.swift */,
-				D42D88A6274A82FF0018B8CD /* CentersToEdgesDemo.swift */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				D41E0353274A349E00AF1E8E /* AppDelegate.swift in Sources */,
 				D42D88A2274A7AF40018B8CD /* WidthToHeightDemo.swift in Sources */,
 				D42D8896274A4C7A0018B8CD /* DemoViewController.swift in Sources */,
+				D4C7D92A274AA2E800646A4F /* CustomConstraintDemo.swift in Sources */,
 				D42D887F274A36A70018B8CD /* MenuViewController.swift in Sources */,
 				D42D8881274A37AA0018B8CD /* MenuCell.swift in Sources */,
 				D42D888E274A43A30018B8CD /* Demo.swift in Sources */,

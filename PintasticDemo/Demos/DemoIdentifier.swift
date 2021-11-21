@@ -16,6 +16,7 @@ enum DemoIdentifier: String, CaseIterable {
     case widthToHeight
     case equalWidthsAndHeights
     case centersToEdges
+    case customConstraint
 }
 
 extension DemoIdentifier {

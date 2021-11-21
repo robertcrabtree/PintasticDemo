@@ -28,6 +28,8 @@ struct DefaultDemoFactory: DemoFactory {
             return EqualWidthsAndHeightsDemo()
         case .centersToEdges:
             return CentersToEdgesDemo()
+        case .customConstraint:
+            return CustomConstraintDemo()
         }
     }
 }
