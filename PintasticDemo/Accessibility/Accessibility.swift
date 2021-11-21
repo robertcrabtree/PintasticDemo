@@ -19,7 +19,8 @@ enum Accessibility: String {
     case leadingAndTrailingCenterView
     case leadingAndTrailingRightView
 
-    case horizontalAndVerticalCenterView
+    case horizontalAndVerticalContainerView
+    case horizontalAndVerticalNestedView
 
     case sameWidthAndHeightLeftView
     case sameWidthAndHeightRightView
