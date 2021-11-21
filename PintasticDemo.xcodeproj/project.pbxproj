@@ -25,6 +25,7 @@
 		D42D8898274A51060018B8CD /* DemoIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D8897274A51060018B8CD /* DemoIdentifier.swift */; };
 		D42D889A274A58760018B8CD /* TopAndBottomDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D8899274A58760018B8CD /* TopAndBottomDecorator.swift */; };
 		D42D889C274A67320018B8CD /* ViewDecoratorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D889B274A67320018B8CD /* ViewDecoratorFactory.swift */; };
+		D42D889E274A73840018B8CD /* LeadingAndTrailingDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D889D274A73840018B8CD /* LeadingAndTrailingDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D42D8897274A51060018B8CD /* DemoIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoIdentifier.swift; sourceTree = "<group>"; };
 		D42D8899274A58760018B8CD /* TopAndBottomDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAndBottomDecorator.swift; sourceTree = "<group>"; };
 		D42D889B274A67320018B8CD /* ViewDecoratorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDecoratorFactory.swift; sourceTree = "<group>"; };
+		D42D889D274A73840018B8CD /* LeadingAndTrailingDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingAndTrailingDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			children = (
 				D42D8890274A44FB0018B8CD /* EdgeDecorator.swift */,
 				D42D8899274A58760018B8CD /* TopAndBottomDecorator.swift */,
+				D42D889D274A73840018B8CD /* LeadingAndTrailingDecorator.swift */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				D42D8891274A44FB0018B8CD /* EdgeDecorator.swift in Sources */,
 				D42D889C274A67320018B8CD /* ViewDecoratorFactory.swift in Sources */,
 				D42D8889274A39B20018B8CD /* CellIdentifiable.swift in Sources */,
+				D42D889E274A73840018B8CD /* LeadingAndTrailingDecorator.swift in Sources */,
 				D41E0353274A349E00AF1E8E /* AppDelegate.swift in Sources */,
 				D42D8896274A4C7A0018B8CD /* DemoViewController.swift in Sources */,
 				D42D887F274A36A70018B8CD /* MenuViewController.swift in Sources */,

@@ -18,6 +18,8 @@ struct DefaultViewDecoratorFactory: ViewDecoratorFactory {
             return EdgeDecorator()
         case .topAndBottom:
             return TopAndBottomDecorator()
+        case .leadingAndTrailing:
+            return LeadingAndTrailingDecorator()
         }
     }
 }
