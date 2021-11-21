@@ -16,10 +16,10 @@ struct DefaultDemoFactory: DemoFactory {
         switch id {
         case .edge:
             return EdgeDemo()
-        case .topAndBottom:
-            return TopAndBottomDemo()
-        case .leadingAndTrailing:
-            return LeadingAndTrailingDemo()
+        case .topToBottom:
+            return TopToBottomDemo()
+        case .leadingToTrailing:
+            return LeadingToTrailingDemo()
         case .horizontalAndVerticalCenter:
             return HorizontalAndVerticalCenterDemo()
         case .widthToHeight:

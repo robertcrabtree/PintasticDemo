@@ -10,8 +10,8 @@ import UIKit
 
 enum DemoIdentifier: String, CaseIterable {
     case edge
-    case topAndBottom
-    case leadingAndTrailing
+    case topToBottom
+    case leadingToTrailing
     case horizontalAndVerticalCenter
     case widthToHeight
     case equalWidthsAndHeights

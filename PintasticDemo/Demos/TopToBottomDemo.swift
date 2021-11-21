@@ -1,5 +1,5 @@
 //
-//  TopAndBottomDemo.swift
+//  TopToBottomDemo.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -10,16 +10,16 @@ import Pintastic
 import UIKit
 
 extension Accessibility {
-    static let topAndBottomTopView = "topAndBottomTopView"
-    static let topAndBottomCenterView = "topAndBottomCenterView"
-    static let topAndBottomBottomView = "topAndBottomBottomView"
+    static let topToBottomTopView = "topToBottomTopView"
+    static let topToBottomCenterView = "topToBottomCenterView"
+    static let topToBottomBottomView = "topToBottomBottomView"
 }
 
-struct TopAndBottomDemo: Demo {
+struct TopToBottomDemo: Demo {
     func pinViews(to view: UIView) {
-        let top = makeView(.topAndBottomTopView, color: .systemOrange)
-        let center = makeView(.topAndBottomCenterView, color: .systemGreen)
-        let bottom = makeView(.topAndBottomBottomView, color: .systemTeal)
+        let top = makeView(.topToBottomTopView, color: .systemOrange)
+        let center = makeView(.topToBottomCenterView, color: .systemGreen)
+        let bottom = makeView(.topToBottomBottomView, color: .systemTeal)
 
         top
             .addToSuperview(view)

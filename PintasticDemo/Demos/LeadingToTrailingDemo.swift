@@ -1,5 +1,5 @@
 //
-//  LeadingAndTrailingDemo.swift
+//  LeadingToTrailingDemo.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -10,16 +10,16 @@ import Pintastic
 import UIKit
 
 extension Accessibility {
-    static let leadingAndTrailingLeftView = "leadingAndTrailingLeftView"
-    static let leadingAndTrailingCenterView = "leadingAndTrailingCenterView"
-    static let leadingAndTrailingRightView = "leadingAndTrailingRightView"
+    static let leadingToTrailingLeftView = "leadingToTrailingLeftView"
+    static let leadingToTrailingCenterView = "leadingToTrailingCenterView"
+    static let leadingToTrailingRightView = "leadingToTrailingRightView"
 }
 
-struct LeadingAndTrailingDemo: Demo {
+struct LeadingToTrailingDemo: Demo {
     func pinViews(to view: UIView) {
-        let left = makeView(.leadingAndTrailingLeftView, color: .systemOrange)
-        let center = makeView(.leadingAndTrailingCenterView, color: .systemGreen)
-        let right = makeView(.leadingAndTrailingRightView, color: .systemTeal)
+        let left = makeView(.leadingToTrailingLeftView, color: .systemOrange)
+        let center = makeView(.leadingToTrailingCenterView, color: .systemGreen)
+        let right = makeView(.leadingToTrailingRightView, color: .systemTeal)
 
         left
             .addToSuperview(view)
