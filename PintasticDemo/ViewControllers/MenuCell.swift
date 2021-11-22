@@ -23,7 +23,7 @@ class MenuCell: UITableViewCell, CellIdentifiable {
         contentView.addSubview(demoTitleLabel)
         demoTitleLabel
             .pin(to: contentView)
-            .height(to: 44)
+            .height(constant: 44)
             .constraint(ofType: .height, handler: { constraint in
                 constraint?.priority = .defaultHigh
             })
