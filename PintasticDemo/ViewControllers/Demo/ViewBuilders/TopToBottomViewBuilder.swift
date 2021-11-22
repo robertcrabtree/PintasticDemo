@@ -1,5 +1,5 @@
 //
-//  TopToBottomDemo.swift
+//  TopToBottomViewBuilder.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,8 +9,8 @@ import Foundation
 import Pintastic
 import UIKit
 
-struct TopToBottomDemo: Demo {
-    func pinViews(to view: UIView) {
+struct TopToBottomViewBuilder: ViewBuilder {
+    func build(view: UIView) {
         let top = makeView(TopToBottomDemoAccessibility.topView, color: .systemOrange)
         let center = makeView(TopToBottomDemoAccessibility.centerView, color: .systemGreen)
         let bottom = makeView(TopToBottomDemoAccessibility.bottomView, color: .systemTeal)

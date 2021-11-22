@@ -1,5 +1,5 @@
 //
-//  Demo.swift
+//  ViewBuilder.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-protocol Demo {
-    func pinViews(to view: UIView)
+protocol ViewBuilder {
+    func build(view: UIView)
 }
 
-extension Demo {
+extension ViewBuilder {
     func makeView(_ accessibility: Accessibility, color: UIColor) -> UIView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false

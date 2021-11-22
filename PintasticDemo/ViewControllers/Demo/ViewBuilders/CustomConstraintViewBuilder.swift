@@ -1,5 +1,5 @@
 //
-//  CustomConstraintDemo.swift
+//  CustomConstraintViewBuilder.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,9 +9,9 @@ import Foundation
 import Pintastic
 import UIKit
 
-struct CustomConstraintDemo: Demo {
-    func pinViews(to view: UIView) {
-        let customView = makeView(CustomConstraintDemoAccessibility.view, color: .systemPurple)
+struct CustomConstraintViewBuilder: ViewBuilder {
+    func build(view: UIView) {
+        let customView = makeView(CustomConstraintDemoAccessibility.childView, color: .systemPurple)
         customView
             .addToSuperview(view)
             .pin(to: view)

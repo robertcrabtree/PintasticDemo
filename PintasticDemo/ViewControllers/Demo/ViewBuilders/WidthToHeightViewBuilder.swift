@@ -1,5 +1,5 @@
 //
-//  WidthToHeightDemo.swift
+//  WidthToHeightViewBuilder.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 import Pintastic
 
-struct WidthToHeightDemo: Demo {
-    func pinViews(to view: UIView) {
+struct WidthToHeightViewBuilder: ViewBuilder {
+    func build(view: UIView) {
 
         let stack: UIStackView = {
             let stack = UIStackView()

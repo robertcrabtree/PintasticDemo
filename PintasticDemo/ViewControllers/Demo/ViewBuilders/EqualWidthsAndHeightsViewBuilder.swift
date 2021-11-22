@@ -1,5 +1,5 @@
 //
-//  EqualWidthsAndHeightsDemo.swift
+//  EqualWidthsAndHeightsViewBuilder.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 import Pintastic
 
-struct EqualWidthsAndHeightsDemo: Demo {
-    func pinViews(to view: UIView) {
+struct EqualWidthsAndHeightsViewBuilder: ViewBuilder {
+    func build(view: UIView) {
 
         let stack: UIStackView = {
             let stack = UIStackView()

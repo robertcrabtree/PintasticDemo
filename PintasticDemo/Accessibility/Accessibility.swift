@@ -16,46 +16,46 @@ extension Accessibility where Self: RawRepresentable, RawValue == String {
 }
 
 enum CentersToEdgesDemoAccessibility: String, Accessibility, CaseIterable {
-    case topLeftView = "demo.centers.edges.top.left"
-    case topRightView = "demo.centers.edges.top.right"
-    case bottomRightView = "demo.centers.edges.bottom.right"
-    case bottomLeftView = "demo.centers.edges.bottom.left"
-    case centerView = "demo.centers.edges.center"
+    case topLeftView
+    case topRightView
+    case bottomRightView
+    case bottomLeftView
+    case centerView
 }
 
 enum CustomConstraintDemoAccessibility: String, Accessibility, CaseIterable {
-    case view = "demo.custom.constraint.view"
+    case childView
 }
 
 enum EdgeDemoAccessibility: String, Accessibility, CaseIterable {
-    case childView = "demo.edge.child"
+    case childView
 }
 
 enum EqualWidthsAndHeightsDemoAccessibility: String, Accessibility, CaseIterable {
-    case leftView = "demo.equal.w.h.left"
-    case rightView = "demo.equal.w.h.right"
+    case leftView
+    case rightView
 }
 
 enum HorizontalAndVerticalCenterDemoAccessibility: String, Accessibility, CaseIterable {
-    case containerView = "demo.h.and.v.center.container"
-    case nestedView = "demo.h.and.v.center.nested"
+    case containerView
+    case nestedView
 }
 
 enum LeadingToTrailingDemoAccessibility: String, Accessibility, CaseIterable {
-    case leftView = "demo.leading.trailing.left"
-    case centerView = "demo.leading.trailing.center"
-    case rightView = "demo.leading.trailing.right"
+    case leftView
+    case centerView
+    case rightView
 }
 
 enum TopToBottomDemoAccessibility: String, Accessibility, CaseIterable {
-    case topView = "demo.top.bottom.top"
-    case centerView = "demo.top.bottom.center"
-    case bottomView = "demo.top.bottom.bottom"
+    case topView
+    case centerView
+    case bottomView
 }
 
 enum WidthToHeightDemoAccessibility: String, Accessibility, CaseIterable {
-    case leftView = "demo.w.h.left"
-    case rightView = "demo.w.h.right"
+    case leftView
+    case rightView
 }
 
 extension DemoIdentifier: Accessibility {}

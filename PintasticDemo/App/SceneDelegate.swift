@@ -17,7 +17,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window = UIWindow(windowScene: windowScene)
 
-        let controller = MenuViewController()
+        let controller = MenuViewController(
+            viewBuilderFactory: DefaultViewBuilderFactory(),
+            viewModel: DefaultMenuViewModel(demoDataSource: DefaultDemoDataSource()
+                                           )
+        )
         let nav = UINavigationController(rootViewController: controller)
 
         window?.rootViewController = nav

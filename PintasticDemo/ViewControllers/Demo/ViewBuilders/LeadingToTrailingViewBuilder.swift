@@ -1,5 +1,5 @@
 //
-//  LeadingToTrailingDemo.swift
+//  LeadingToTrailingViewBuilder.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,8 +9,8 @@ import Foundation
 import Pintastic
 import UIKit
 
-struct LeadingToTrailingDemo: Demo {
-    func pinViews(to view: UIView) {
+struct LeadingToTrailingViewBuilder: ViewBuilder {
+    func build(view: UIView) {
         let left = makeView(LeadingToTrailingDemoAccessibility.leftView, color: .systemOrange)
         let center = makeView(LeadingToTrailingDemoAccessibility.centerView, color: .systemGreen)
         let right = makeView(LeadingToTrailingDemoAccessibility.rightView, color: .systemTeal)
