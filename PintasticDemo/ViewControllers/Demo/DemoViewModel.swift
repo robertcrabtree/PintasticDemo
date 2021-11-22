@@ -8,9 +8,15 @@
 import Foundation
 
 protocol DemoViewModel {
-    var title: String { get }
+    var title: String? { get }
 }
 
 struct DefaultDemoViewModel: DemoViewModel {
-    let title: String
+
+    let demoDataSource: DemoDataSource
+    let identifier: DemoIdentifier
+
+    var title: String? {
+        demoDataSource.demo(identifier: identifier)?.title
+    }
 }

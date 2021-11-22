@@ -14,15 +14,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
-        let deps: Dependencies = {
-            let demoDataSource = DefaultDemoDataSource()
-            let deps = Dependencies(
-                demoDataSource: demoDataSource,
-                viewBuilderFactory: DefaultViewBuilderFactory(),
-                viewModelFactory: DefaultViewModelFactory(demoDataSource: demoDataSource)
-            )
-            return deps
-        }()
+        let deps = Dependencies(
+            demoDataSource: DefaultDemoDataSource(),
+            viewDecoratorFactory: DefaultViewDecoratorFactory()
+        )
 
         window = UIWindow(windowScene: windowScene)
 

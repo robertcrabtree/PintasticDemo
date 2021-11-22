@@ -9,21 +9,21 @@ import Foundation
 
 protocol ViewControllerFactory {
     func makeMenuViewController() -> MenuViewController
-    func makeDemoViewController(identifier: DemoIdentifier, title: String) -> DemoViewController
+    func makeDemoViewController(identifier: DemoIdentifier) -> DemoViewController
 }
 
 extension Dependencies: ViewControllerFactory {
     func makeMenuViewController() -> MenuViewController {
         MenuViewController(
             viewControllerFactory: self,
-            viewModel: viewModelFactory.makeMenuViewModel()
+            viewModel: DefaultMenuViewModel(demoDataSource: demoDataSource)
         )
     }
 
-    func makeDemoViewController(identifier: DemoIdentifier, title: String) -> DemoViewController {
+    func makeDemoViewController(identifier: DemoIdentifier) -> DemoViewController {
         DemoViewController(
-            viewModel: viewModelFactory.makeDemoViewModel(title: title),
-            viewBuilder: viewBuilderFactory.makeBuilder(identifier: identifier)
+            viewModel: DefaultDemoViewModel(demoDataSource: demoDataSource, identifier: identifier),
+            viewDecorator: viewDecoratorFactory.makeDecorator(identifier: identifier)
         )
     }
 }

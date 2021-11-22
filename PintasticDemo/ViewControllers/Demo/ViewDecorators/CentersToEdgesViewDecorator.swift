@@ -1,5 +1,5 @@
 //
-//  CentersToEdgesViewBuilder.swift
+//  CentersToEdgesViewDecorator.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 import Pintastic
 
-struct CentersToEdgesViewBuilder: ViewBuilder {
+struct CentersToEdgesViewDecorator: ViewDecorator {
 
-    func build(view: UIView) {
+    func decorate(view: UIView) {
         let topLeft = makeView(
             CentersToEdgesDemoAccessibility.topLeftView,
             color: .systemRed

@@ -1,5 +1,5 @@
 //
-//  EdgeViewBuilder.swift
+//  EdgeViewDecorator.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,8 +9,8 @@ import Foundation
 import Pintastic
 import UIKit
 
-struct EdgeViewBuilder: ViewBuilder {
-    func build(view: UIView) {
+struct EdgeViewDecorator: ViewDecorator {
+    func decorate(view: UIView) {
         makeView(EdgeDemoAccessibility.childView, color: .systemOrange)
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)

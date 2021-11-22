@@ -9,6 +9,5 @@ import Foundation
 
 struct Dependencies {
     let demoDataSource: DemoDataSource
-    let viewBuilderFactory: ViewBuilderFactory
-    let viewModelFactory: ViewModelFactory
+    let viewDecoratorFactory: ViewDecoratorFactory
 }

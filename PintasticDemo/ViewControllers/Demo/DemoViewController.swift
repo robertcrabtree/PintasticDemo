@@ -10,11 +10,11 @@ import UIKit
 class DemoViewController: UIViewController {
 
     private let viewModel: DemoViewModel
-    private let viewBuilder: ViewBuilder
+    private let viewDecorator: ViewDecorator
 
-    init(viewModel: DemoViewModel, viewBuilder: ViewBuilder) {
+    init(viewModel: DemoViewModel, viewDecorator: ViewDecorator) {
         self.viewModel = viewModel
-        self.viewBuilder = viewBuilder
+        self.viewDecorator = viewDecorator
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -25,7 +25,7 @@ class DemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = viewModel.title
-        viewBuilder.build(view: view)
+        viewDecorator.decorate(view: view)
         view.backgroundColor = .systemBackground
     }
 }

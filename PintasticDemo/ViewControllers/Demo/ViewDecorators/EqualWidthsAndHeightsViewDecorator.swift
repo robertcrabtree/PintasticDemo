@@ -1,5 +1,5 @@
 //
-//  EqualWidthsAndHeightsViewBuilder.swift
+//  EqualWidthsAndHeightsViewDecorator.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 import Pintastic
 
-struct EqualWidthsAndHeightsViewBuilder: ViewBuilder {
-    func build(view: UIView) {
+struct EqualWidthsAndHeightsViewDecorator: ViewDecorator {
+    func decorate(view: UIView) {
 
         let stack: UIStackView = {
             let stack = UIStackView()

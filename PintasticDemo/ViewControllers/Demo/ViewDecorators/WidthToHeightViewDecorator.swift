@@ -1,5 +1,5 @@
 //
-//  WidthToHeightViewBuilder.swift
+//  WidthToHeightViewDecorator.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 import Pintastic
 
-struct WidthToHeightViewBuilder: ViewBuilder {
-    func build(view: UIView) {
+struct WidthToHeightViewDecorator: ViewDecorator {
+    func decorate(view: UIView) {
 
         let stack: UIStackView = {
             let stack = UIStackView()

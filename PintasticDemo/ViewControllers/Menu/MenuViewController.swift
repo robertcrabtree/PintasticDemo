@@ -52,8 +52,7 @@ class MenuViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
 
         let controller = viewControllerFactory.makeDemoViewController(
-            identifier: viewModel.identifier(for: indexPath),
-            title: viewModel.title(for: indexPath)
+            identifier: viewModel.identifier(for: indexPath)
         )
         show(controller, sender: self)
     }

@@ -1,5 +1,5 @@
 //
-//  ViewBuilderFactory.swift
+//  ViewDecoratorFactory.swift
 //  PintasticDemo
 //
 //  Created by Rob on 11/21/21.
@@ -7,29 +7,29 @@
 
 import Foundation
 
-protocol ViewBuilderFactory {
-    func makeBuilder(identifier: DemoIdentifier) -> ViewBuilder
+protocol ViewDecoratorFactory {
+    func makeDecorator(identifier: DemoIdentifier) -> ViewDecorator
 }
 
-struct DefaultViewBuilderFactory: ViewBuilderFactory {
-    func makeBuilder(identifier: DemoIdentifier) -> ViewBuilder {
+struct DefaultViewDecoratorFactory: ViewDecoratorFactory {
+    func makeDecorator(identifier: DemoIdentifier) -> ViewDecorator {
         switch identifier {
         case .edge:
-            return EdgeViewBuilder()
+            return EdgeViewDecorator()
         case .topToBottom:
-            return TopToBottomViewBuilder()
+            return TopToBottomViewDecorator()
         case .leadingToTrailing:
-            return LeadingToTrailingViewBuilder()
+            return LeadingToTrailingViewDecorator()
         case .horizontalAndVerticalCenter:
-            return HorizontalAndVerticalCenterViewBuilder()
+            return HorizontalAndVerticalCenterViewDecorator()
         case .widthToHeight:
-            return WidthToHeightViewBuilder()
+            return WidthToHeightViewDecorator()
         case .equalWidthsAndHeights:
-            return EqualWidthsAndHeightsViewBuilder()
+            return EqualWidthsAndHeightsViewDecorator()
         case .centersToEdges:
-            return CentersToEdgesViewBuilder()
+            return CentersToEdgesViewDecorator()
         case .customConstraint:
-            return CustomConstraintViewBuilder()
+            return CustomConstraintViewDecorator()
         }
     }
 }
