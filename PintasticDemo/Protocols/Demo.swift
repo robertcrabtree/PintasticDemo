@@ -13,10 +13,10 @@ protocol Demo {
 }
 
 extension Demo {
-    func makeView(_ identifier: Accessibility, color: UIColor) -> UIView {
+    func makeView(_ accessibility: Accessibility, color: UIColor) -> UIView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.accessibilityIdentifier = identifier
+        view.accessibilityIdentifier = accessibility.accessibility
         view.backgroundColor = color.withAlphaComponent(0.5)
         return view
     }

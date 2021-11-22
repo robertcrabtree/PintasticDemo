@@ -9,13 +9,9 @@ import Foundation
 import Pintastic
 import UIKit
 
-extension Accessibility {
-    static let customConstraintView = "customConstraintView"
-}
-
 struct CustomConstraintDemo: Demo {
     func pinViews(to view: UIView) {
-        let customView = makeView(.customConstraintView, color: .systemPurple)
+        let customView = makeView(CustomConstraintDemoAccessibility.view, color: .systemPurple)
         customView
             .addToSuperview(view)
             .pin(to: view)

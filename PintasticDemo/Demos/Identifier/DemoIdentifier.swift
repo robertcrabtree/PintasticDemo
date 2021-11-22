@@ -20,9 +20,6 @@ enum DemoIdentifier: String, CaseIterable {
 }
 
 extension DemoIdentifier {
-    var accessibility: String {
-        "accessibility." + rawValue
-    }
 
     var title: String {
         rawValue

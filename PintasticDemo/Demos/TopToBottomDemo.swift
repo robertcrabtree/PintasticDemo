@@ -9,17 +9,11 @@ import Foundation
 import Pintastic
 import UIKit
 
-extension Accessibility {
-    static let topToBottomTopView = "topToBottomTopView"
-    static let topToBottomCenterView = "topToBottomCenterView"
-    static let topToBottomBottomView = "topToBottomBottomView"
-}
-
 struct TopToBottomDemo: Demo {
     func pinViews(to view: UIView) {
-        let top = makeView(.topToBottomTopView, color: .systemOrange)
-        let center = makeView(.topToBottomCenterView, color: .systemGreen)
-        let bottom = makeView(.topToBottomBottomView, color: .systemTeal)
+        let top = makeView(TopToBottomDemoAccessibility.topView, color: .systemOrange)
+        let center = makeView(TopToBottomDemoAccessibility.centerView, color: .systemGreen)
+        let bottom = makeView(TopToBottomDemoAccessibility.bottomView, color: .systemTeal)
 
         top
             .addToSuperview(view)

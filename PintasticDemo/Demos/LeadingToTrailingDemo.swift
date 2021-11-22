@@ -9,17 +9,11 @@ import Foundation
 import Pintastic
 import UIKit
 
-extension Accessibility {
-    static let leadingToTrailingLeftView = "leadingToTrailingLeftView"
-    static let leadingToTrailingCenterView = "leadingToTrailingCenterView"
-    static let leadingToTrailingRightView = "leadingToTrailingRightView"
-}
-
 struct LeadingToTrailingDemo: Demo {
     func pinViews(to view: UIView) {
-        let left = makeView(.leadingToTrailingLeftView, color: .systemOrange)
-        let center = makeView(.leadingToTrailingCenterView, color: .systemGreen)
-        let right = makeView(.leadingToTrailingRightView, color: .systemTeal)
+        let left = makeView(LeadingToTrailingDemoAccessibility.leftView, color: .systemOrange)
+        let center = makeView(LeadingToTrailingDemoAccessibility.centerView, color: .systemGreen)
+        let right = makeView(LeadingToTrailingDemoAccessibility.rightView, color: .systemTeal)
 
         left
             .addToSuperview(view)

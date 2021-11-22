@@ -9,11 +9,6 @@ import Foundation
 import UIKit
 import Pintastic
 
-extension Accessibility {
-    static let equalWidthsAndHeightsLeftView = "equalWidthsAndHeightsLeftView"
-    static let equalWidthsAndHeightsRightView = "equalWidthsAndHeightsRightView"
-}
-
 struct EqualWidthsAndHeightsDemo: Demo {
     func pinViews(to view: UIView) {
 
@@ -32,8 +27,8 @@ struct EqualWidthsAndHeightsDemo: Demo {
             .horizontalCenters()
             .activate()
 
-        let left = makeView(.equalWidthsAndHeightsLeftView, color: .systemYellow)
-        let right = makeView(.equalWidthsAndHeightsRightView, color: .systemPurple)
+        let left = makeView(EqualWidthsAndHeightsDemoAccessibility.leftView, color: .systemYellow)
+        let right = makeView(EqualWidthsAndHeightsDemoAccessibility.rightView, color: .systemPurple)
 
         stack.addArrangedSubview(left)
         stack.addArrangedSubview(right)
