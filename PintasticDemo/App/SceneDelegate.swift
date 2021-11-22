@@ -11,18 +11,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
+        let deps: Dependencies = {
+            let demoDataSource = DefaultDemoDataSource()
+            let deps = Dependencies(
+                demoDataSource: demoDataSource,
+                viewBuilderFactory: DefaultViewBuilderFactory(),
+                viewModelFactory: DefaultViewModelFactory(demoDataSource: demoDataSource)
+            )
+            return deps
+        }()
+
         window = UIWindow(windowScene: windowScene)
 
-        let controller = MenuViewController(
-            viewBuilderFactory: DefaultViewBuilderFactory(),
-            viewModel: DefaultMenuViewModel(demoDataSource: DefaultDemoDataSource()
-                                           )
-        )
-        let nav = UINavigationController(rootViewController: controller)
+        let nav = UINavigationController(rootViewController: deps.makeMenuViewController())
 
         window?.rootViewController = nav
         window?.makeKeyAndVisible()

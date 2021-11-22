@@ -13,7 +13,6 @@ protocol MenuViewModel {
     func identifier(for indexPath: IndexPath) -> DemoIdentifier
     func title(for indexPath: IndexPath) -> String
     func accessibility(for indexPath: IndexPath) -> String
-    func viewModel(for indexPath: IndexPath) -> DemoViewModel
 }
 
 struct DefaultMenuViewModel: MenuViewModel {
@@ -32,9 +31,5 @@ struct DefaultMenuViewModel: MenuViewModel {
 
     func accessibility(for indexPath: IndexPath) -> String {
         demoDataSource.demos[indexPath.row].identifier.accessibility
-    }
-
-    func viewModel(for indexPath: IndexPath) -> DemoViewModel {
-        DefaultDemoViewModel(title: title(for: indexPath))
     }
 }

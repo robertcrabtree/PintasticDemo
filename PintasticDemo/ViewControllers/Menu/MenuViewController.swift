@@ -11,11 +11,11 @@ import Pintastic
 
 class MenuViewController: UITableViewController {
 
-    let viewBuilderFactory: ViewBuilderFactory
+    let viewControllerFactory: ViewControllerFactory
     let viewModel: MenuViewModel
 
-    init(viewBuilderFactory: ViewBuilderFactory, viewModel: MenuViewModel) {
-        self.viewBuilderFactory = viewBuilderFactory
+    init(viewControllerFactory: ViewControllerFactory, viewModel: MenuViewModel) {
+        self.viewControllerFactory = viewControllerFactory
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -51,11 +51,9 @@ class MenuViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 
-        let controller = DemoViewController(
-            viewModel: viewModel.viewModel(for: indexPath),
-            viewBuilder: viewBuilderFactory.makeBuilder(
-                identifier: viewModel.identifier(for: indexPath)
-            )
+        let controller = viewControllerFactory.makeDemoViewController(
+            identifier: viewModel.identifier(for: indexPath),
+            title: viewModel.title(for: indexPath)
         )
         show(controller, sender: self)
     }
