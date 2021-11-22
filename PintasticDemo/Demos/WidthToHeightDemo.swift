@@ -9,11 +9,6 @@ import Foundation
 import UIKit
 import Pintastic
 
-extension Accessibility {
-    static let widthToHeightLeftView = "widthToHeightLeftView"
-    static let widthToHeightRightView = "widthToHeightRightView"
-}
-
 struct WidthToHeightDemo: Demo {
     func pinViews(to view: UIView) {
 
@@ -32,8 +27,8 @@ struct WidthToHeightDemo: Demo {
             .horizontalCenters()
             .activate()
 
-        let topView = makeView(.widthToHeightLeftView, color: .systemPurple)
-        let bottomView = makeView(.widthToHeightRightView, color: .systemCyan)
+        let topView = makeView(WidthToHeightDemoAccessibility.leftView, color: .systemPurple)
+        let bottomView = makeView(WidthToHeightDemoAccessibility.rightView, color: .systemCyan)
 
         stack.addArrangedSubview(topView)
         stack.addArrangedSubview(bottomView)

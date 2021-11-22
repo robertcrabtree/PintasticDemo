@@ -9,13 +9,9 @@ import Foundation
 import Pintastic
 import UIKit
 
-extension Accessibility {
-    static let edgeDemoChildView = "edgeDemoChildView"
-}
-
 struct EdgeDemo: Demo {
     func pinViews(to view: UIView) {
-        makeView(.edgeDemoChildView, color: .systemOrange)
+        makeView(EdgeDemoAccessibility.childView, color: .systemOrange)
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
             .leadingEdges(constant: 20)

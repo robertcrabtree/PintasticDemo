@@ -12,8 +12,7 @@
 		D41E035C274A34A200AF1E8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41E035B274A34A200AF1E8E /* Assets.xcassets */; };
 		D41E035F274A34A200AF1E8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41E035D274A34A200AF1E8E /* LaunchScreen.storyboard */; };
 		D41E036A274A34A200AF1E8E /* PintasticDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E0369274A34A200AF1E8E /* PintasticDemoTests.swift */; };
-		D41E0374274A34A200AF1E8E /* PintasticDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E0373274A34A200AF1E8E /* PintasticDemoUITests.swift */; };
-		D41E0376274A34A200AF1E8E /* PintasticDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E0375274A34A200AF1E8E /* PintasticDemoUITestsLaunchTests.swift */; };
+		D41E0374274A34A200AF1E8E /* PintasticDemoUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41E0373274A34A200AF1E8E /* PintasticDemoUITestBase.swift */; };
 		D42D887F274A36A70018B8CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D887E274A36A70018B8CD /* MenuViewController.swift */; };
 		D42D8881274A37AA0018B8CD /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D8880274A37AA0018B8CD /* MenuCell.swift */; };
 		D42D8886274A38E20018B8CD /* Pintastic in Frameworks */ = {isa = PBXBuildFile; productRef = D42D8885274A38E20018B8CD /* Pintastic */; };
@@ -30,6 +29,16 @@
 		D42D88A2274A7AF40018B8CD /* WidthToHeightDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A1274A7AF40018B8CD /* WidthToHeightDemo.swift */; };
 		D42D88A5274A7DBF0018B8CD /* EqualWidthsAndHeightsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A4274A7DBF0018B8CD /* EqualWidthsAndHeightsDemo.swift */; };
 		D42D88A7274A82FF0018B8CD /* CentersToEdgesDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A6274A82FF0018B8CD /* CentersToEdgesDemo.swift */; };
+		D46DCA71274B33F3006D086B /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D8893274A4B690018B8CD /* Accessibility.swift */; };
+		D46DCA72274B33F8006D086B /* DemoIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D8897274A51060018B8CD /* DemoIdentifier.swift */; };
+		D46DCA74274B4CA1006D086B /* PintasticEdgeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46DCA73274B4CA1006D086B /* PintasticEdgeDemoUITests.swift */; };
+		D46DCA76274B4DD3006D086B /* PintasticCentersToEdgesDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46DCA75274B4DD3006D086B /* PintasticCentersToEdgesDemoUITests.swift */; };
+		D46DCA78274B4E63006D086B /* PintasticCustomConstraintDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46DCA77274B4E63006D086B /* PintasticCustomConstraintDemoUITests.swift */; };
+		D46DCA7A274B4ED8006D086B /* PintasticEqualWidthsAndHeightsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46DCA79274B4ED8006D086B /* PintasticEqualWidthsAndHeightsDemoUITests.swift */; };
+		D46DCA7C274B4F35006D086B /* PintasticHorizontalAndVerticalCenterDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46DCA7B274B4F35006D086B /* PintasticHorizontalAndVerticalCenterDemoUITests.swift */; };
+		D48FFCA8274B4FDD006C25D8 /* PintasticLeadingToTrailingDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48FFCA7274B4FDD006C25D8 /* PintasticLeadingToTrailingDemoUITests.swift */; };
+		D48FFCAA274B506E006C25D8 /* PintasticTopToBottomDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48FFCA9274B506E006C25D8 /* PintasticTopToBottomDemoUITests.swift */; };
+		D48FFCAC274B50D8006C25D8 /* PintasticWidthToHeightDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48FFCAB274B50D8006C25D8 /* PintasticWidthToHeightDemoUITests.swift */; };
 		D4C7D92A274AA2E800646A4F /* CustomConstraintDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C7D929274AA2E800646A4F /* CustomConstraintDemo.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +69,7 @@
 		D41E0365274A34A200AF1E8E /* PintasticDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PintasticDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41E0369274A34A200AF1E8E /* PintasticDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticDemoTests.swift; sourceTree = "<group>"; };
 		D41E036F274A34A200AF1E8E /* PintasticDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PintasticDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D41E0373274A34A200AF1E8E /* PintasticDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticDemoUITests.swift; sourceTree = "<group>"; };
-		D41E0375274A34A200AF1E8E /* PintasticDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D41E0373274A34A200AF1E8E /* PintasticDemoUITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticDemoUITestBase.swift; sourceTree = "<group>"; };
 		D41E0382274A351D00AF1E8E /* Pintastic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Pintastic; path = ../Pintastic; sourceTree = "<group>"; };
 		D42D887E274A36A70018B8CD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D42D8880274A37AA0018B8CD /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
@@ -78,6 +86,14 @@
 		D42D88A1274A7AF40018B8CD /* WidthToHeightDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidthToHeightDemo.swift; sourceTree = "<group>"; };
 		D42D88A4274A7DBF0018B8CD /* EqualWidthsAndHeightsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualWidthsAndHeightsDemo.swift; sourceTree = "<group>"; };
 		D42D88A6274A82FF0018B8CD /* CentersToEdgesDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentersToEdgesDemo.swift; sourceTree = "<group>"; };
+		D46DCA73274B4CA1006D086B /* PintasticEdgeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticEdgeDemoUITests.swift; sourceTree = "<group>"; };
+		D46DCA75274B4DD3006D086B /* PintasticCentersToEdgesDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticCentersToEdgesDemoUITests.swift; sourceTree = "<group>"; };
+		D46DCA77274B4E63006D086B /* PintasticCustomConstraintDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticCustomConstraintDemoUITests.swift; sourceTree = "<group>"; };
+		D46DCA79274B4ED8006D086B /* PintasticEqualWidthsAndHeightsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticEqualWidthsAndHeightsDemoUITests.swift; sourceTree = "<group>"; };
+		D46DCA7B274B4F35006D086B /* PintasticHorizontalAndVerticalCenterDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticHorizontalAndVerticalCenterDemoUITests.swift; sourceTree = "<group>"; };
+		D48FFCA7274B4FDD006C25D8 /* PintasticLeadingToTrailingDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticLeadingToTrailingDemoUITests.swift; sourceTree = "<group>"; };
+		D48FFCA9274B506E006C25D8 /* PintasticTopToBottomDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticTopToBottomDemoUITests.swift; sourceTree = "<group>"; };
+		D48FFCAB274B50D8006C25D8 /* PintasticWidthToHeightDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticWidthToHeightDemoUITests.swift; sourceTree = "<group>"; };
 		D4C7D929274AA2E800646A4F /* CustomConstraintDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomConstraintDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,8 +171,15 @@
 		D41E0372274A34A200AF1E8E /* PintasticDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D41E0373274A34A200AF1E8E /* PintasticDemoUITests.swift */,
-				D41E0375274A34A200AF1E8E /* PintasticDemoUITestsLaunchTests.swift */,
+				D48FFCAD274B53BB006C25D8 /* Base */,
+				D46DCA75274B4DD3006D086B /* PintasticCentersToEdgesDemoUITests.swift */,
+				D46DCA77274B4E63006D086B /* PintasticCustomConstraintDemoUITests.swift */,
+				D46DCA73274B4CA1006D086B /* PintasticEdgeDemoUITests.swift */,
+				D46DCA79274B4ED8006D086B /* PintasticEqualWidthsAndHeightsDemoUITests.swift */,
+				D46DCA7B274B4F35006D086B /* PintasticHorizontalAndVerticalCenterDemoUITests.swift */,
+				D48FFCA7274B4FDD006C25D8 /* PintasticLeadingToTrailingDemoUITests.swift */,
+				D48FFCA9274B506E006C25D8 /* PintasticTopToBottomDemoUITests.swift */,
+				D48FFCAB274B50D8006C25D8 /* PintasticWidthToHeightDemoUITests.swift */,
 			);
 			path = PintasticDemoUITests;
 			sourceTree = "<group>";
@@ -219,6 +242,14 @@
 				D41E0354274A349E00AF1E8E /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		D48FFCAD274B53BB006C25D8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D41E0373274A34A200AF1E8E /* PintasticDemoUITestBase.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		D4C7D92B274AA9F300646A4F /* Identifier */ = {
@@ -395,8 +426,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D41E0374274A34A200AF1E8E /* PintasticDemoUITests.swift in Sources */,
-				D41E0376274A34A200AF1E8E /* PintasticDemoUITestsLaunchTests.swift in Sources */,
+				D48FFCAC274B50D8006C25D8 /* PintasticWidthToHeightDemoUITests.swift in Sources */,
+				D46DCA74274B4CA1006D086B /* PintasticEdgeDemoUITests.swift in Sources */,
+				D41E0374274A34A200AF1E8E /* PintasticDemoUITestBase.swift in Sources */,
+				D46DCA78274B4E63006D086B /* PintasticCustomConstraintDemoUITests.swift in Sources */,
+				D48FFCAA274B506E006C25D8 /* PintasticTopToBottomDemoUITests.swift in Sources */,
+				D46DCA76274B4DD3006D086B /* PintasticCentersToEdgesDemoUITests.swift in Sources */,
+				D46DCA71274B33F3006D086B /* Accessibility.swift in Sources */,
+				D46DCA72274B33F8006D086B /* DemoIdentifier.swift in Sources */,
+				D46DCA7A274B4ED8006D086B /* PintasticEqualWidthsAndHeightsDemoUITests.swift in Sources */,
+				D46DCA7C274B4F35006D086B /* PintasticHorizontalAndVerticalCenterDemoUITests.swift in Sources */,
+				D48FFCA8274B4FDD006C25D8 /* PintasticLeadingToTrailingDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
