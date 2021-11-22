@@ -9,7 +9,7 @@ import XCTest
 
 class PintasticLeadingToTrailingDemoUITests: PintasticDemoUITestBase {
     func testDemo() throws {
-        startDemo(withIdentifier: .leadingToTrailing,
-                  accessibilityIdentifiers: LeadingToTrailingDemoAccessibility.allCases)
+        startDemo(menuAccessibility: .leadingToTrailing,
+                  demoAccessibility: LeadingToTrailingDemoAccessibility.allCases)
     }
 }

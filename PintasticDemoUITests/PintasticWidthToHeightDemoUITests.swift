@@ -9,7 +9,7 @@ import XCTest
 
 class PintasticWidthToHeightDemoUITests: PintasticDemoUITestBase {
     func testDemo() throws {
-        startDemo(withIdentifier: .widthToHeight,
-                  accessibilityIdentifiers: WidthToHeightDemoAccessibility.allCases)
+        startDemo(menuAccessibility: .widthToHeight,
+                  demoAccessibility: WidthToHeightDemoAccessibility.allCases)
     }
 }

@@ -20,12 +20,13 @@ class PintasticDemoUITestBase: XCTestCase {
     }
 
     func startDemo(
-        withIdentifier identifier: DemoIdentifier,
-        accessibilityIdentifiers: [Accessibility]
+        menuAccessibility: MenuAccessibility,
+        demoAccessibility: [Accessibility]
     ) {
-        app.tables.cells[identifier].tap()
-        accessibilityIdentifiers.forEach {
+        app.tables.cells[menuAccessibility].tap()
+        demoAccessibility.forEach {
             XCTAssertTrue(app.otherElements[$0].exists)
+            XCTAssertTrue(app.otherElements[$0].isHittable)
         }
         app.buttons["Demo Menu"].tap()
     }

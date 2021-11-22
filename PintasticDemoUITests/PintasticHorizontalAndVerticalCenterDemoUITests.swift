@@ -9,7 +9,7 @@ import XCTest
 
 class PintasticHorizontalAndVerticalCenterDemoUITests: PintasticDemoUITestBase {
     func testDemo() throws {
-        startDemo(withIdentifier: .horizontalAndVerticalCenter,
-                  accessibilityIdentifiers: HorizontalAndVerticalCenterDemoAccessibility.allCases)
+        startDemo(menuAccessibility: .horizontalAndVerticalCenter,
+                  demoAccessibility: HorizontalAndVerticalCenterDemoAccessibility.allCases)
     }
 }

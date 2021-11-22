@@ -9,7 +9,7 @@ import XCTest
 
 class PintasticTopToBottomDemoUITests: PintasticDemoUITestBase {
     func testExample() throws {
-        startDemo(withIdentifier: .topToBottom,
-                  accessibilityIdentifiers: TopToBottomDemoAccessibility.allCases)
+        startDemo(menuAccessibility: .topToBottom,
+                  demoAccessibility: TopToBottomDemoAccessibility.allCases)
     }
 }

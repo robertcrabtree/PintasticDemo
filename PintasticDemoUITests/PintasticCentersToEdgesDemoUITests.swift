@@ -9,7 +9,7 @@ import XCTest
 
 class PintasticCentersToEdgesDemoUITests: PintasticDemoUITestBase {
     func testDemo() throws {
-        startDemo(withIdentifier: .centersToEdges,
-                  accessibilityIdentifiers: CentersToEdgesDemoAccessibility.allCases)
+        startDemo(menuAccessibility: .centersToEdges,
+                  demoAccessibility: CentersToEdgesDemoAccessibility.allCases)
     }
 }

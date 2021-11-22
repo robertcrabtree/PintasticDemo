@@ -15,6 +15,10 @@ extension Accessibility where Self: RawRepresentable, RawValue == String {
     var accessibility: String { rawValue }
 }
 
+typealias MenuAccessibility = DemoIdentifier
+
+extension MenuAccessibility: Accessibility {}
+
 enum CentersToEdgesDemoAccessibility: String, Accessibility, CaseIterable {
     case topLeftView
     case topRightView
@@ -57,5 +61,3 @@ enum WidthToHeightDemoAccessibility: String, Accessibility, CaseIterable {
     case leftView
     case rightView
 }
-
-extension DemoIdentifier: Accessibility {}

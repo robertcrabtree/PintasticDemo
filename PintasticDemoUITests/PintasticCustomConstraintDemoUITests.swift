@@ -9,7 +9,7 @@ import XCTest
 
 class PintasticCustomConstraintDemoUITests: PintasticDemoUITestBase {
     func testDemo() throws {
-        startDemo(withIdentifier: .customConstraint,
-                  accessibilityIdentifiers: CustomConstraintDemoAccessibility.allCases)
+        startDemo(menuAccessibility: .customConstraint,
+                  demoAccessibility: CustomConstraintDemoAccessibility.allCases)
     }
 }
