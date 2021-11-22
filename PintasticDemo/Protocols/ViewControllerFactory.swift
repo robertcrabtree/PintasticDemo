@@ -16,13 +16,13 @@ extension Dependencies: ViewControllerFactory {
     func makeMenuViewController() -> MenuViewController {
         MenuViewController(
             viewControllerFactory: self,
-            viewModel: DefaultMenuViewModel(demoDataSource: demoDataSource)
+            viewModel: MenuViewModel(demoDataSource: demoDataSource)
         )
     }
 
     func makeDemoViewController(identifier: DemoIdentifier) -> DemoViewController {
         DemoViewController(
-            viewModel: DefaultDemoViewModel(demoDataSource: demoDataSource, identifier: identifier),
+            viewModel: DemoViewModel(demoDataSource: demoDataSource, identifier: identifier),
             viewDecorator: viewDecoratorFactory.makeDecorator(identifier: identifier)
         )
     }

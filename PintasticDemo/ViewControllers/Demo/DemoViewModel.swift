@@ -7,11 +7,7 @@
 
 import Foundation
 
-protocol DemoViewModel {
-    var title: String? { get }
-}
-
-struct DefaultDemoViewModel: DemoViewModel {
+struct DemoViewModel {
 
     let demoDataSource: DemoDataSource
     let identifier: DemoIdentifier

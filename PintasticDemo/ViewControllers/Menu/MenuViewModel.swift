@@ -7,15 +7,7 @@
 
 import Foundation
 
-protocol MenuViewModel {
-    var demoCount: Int { get }
-
-    func identifier(for indexPath: IndexPath) -> DemoIdentifier
-    func title(for indexPath: IndexPath) -> String
-    func accessibility(for indexPath: IndexPath) -> String
-}
-
-struct DefaultMenuViewModel: MenuViewModel {
+struct MenuViewModel {
 
     let demoDataSource: DemoDataSource
 
