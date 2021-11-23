@@ -18,6 +18,13 @@ extension ViewDecorator {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.accessibilityIdentifier = accessibility.accessibility
         view.backgroundColor = color
+        view.layer.cornerRadius = 8
+        view.layer.maskedCorners = [
+            .layerMinXMinYCorner,
+            .layerMinXMaxYCorner,
+            .layerMaxXMinYCorner,
+            .layerMaxXMaxYCorner,
+        ]
         return view
     }
 }
