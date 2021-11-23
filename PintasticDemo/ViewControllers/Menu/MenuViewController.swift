@@ -33,6 +33,8 @@ class MenuViewController: UITableViewController {
 
         title = "Demo Menu"
 
+        navigationItem.backButtonTitle = ""
+        navigationController?.navigationBar.prefersLargeTitles = true
         tableView.register(MenuCell.self)
     }
 

@@ -10,7 +10,7 @@ import Pintastic
 import UIKit
 
 struct CustomConstraintViewDecorator: ViewDecorator {
-    func decorate(view: UIView) {
+    func decorate(view: UIView, descriptionLabel: UILabel) {
         let palette = ColorPalette(count: 1)
 
         let customView = makeView(CustomConstraintDemoAccessibility.childView, color: palette.next())
@@ -25,5 +25,7 @@ struct CustomConstraintViewDecorator: ViewDecorator {
                 customView.heightAnchor.constraint(equalToConstant: 50.0)
             })
             .activate()
+
+        descriptionLabel.text = "This demonstrates how custom constraints can be applied to a view. In this example the width and height of the primary view are configured using custom constraints."
     }
 }

@@ -12,6 +12,20 @@ class DemoViewController: UIViewController {
     private let viewModel: DemoViewModel
     private let viewDecorator: ViewDecorator
 
+    let descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        return label
+    }()
+
+    let contentView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
     init(viewModel: DemoViewModel, viewDecorator: ViewDecorator) {
         self.viewModel = viewModel
         self.viewDecorator = viewDecorator
@@ -26,6 +40,28 @@ class DemoViewController: UIViewController {
         super.viewDidLoad()
         title = viewModel.title
         view.backgroundColor = .systemBackground
-        viewDecorator.decorate(view: view)
+        navigationItem.largeTitleDisplayMode = .never
+
+        view.addSubview(contentView)
+        contentView.pin(to: view.safeAreaLayoutGuide)
+            .leadingEdges()
+            .trailingEdges()
+            .topEdges()
+            .activate()
+
+        view.addSubview(descriptionLabel)
+        descriptionLabel
+            .pin(to: view.safeAreaLayoutGuide)
+            .leadingEdges(constant: 20)
+            .trailingEdges(constant: -20)
+            .bottomEdges(constant: -40)
+            .activate()
+
+        descriptionLabel
+            .pin(to: contentView)
+            .topToBottomEdge(constant: 20)
+            .activate()
+
+        viewDecorator.decorate(view: contentView, descriptionLabel: descriptionLabel)
     }
 }

@@ -10,7 +10,7 @@ import Pintastic
 import UIKit
 
 struct LeadingToTrailingViewDecorator: ViewDecorator {
-    func decorate(view: UIView) {
+    func decorate(view: UIView, descriptionLabel: UILabel) {
         let palette = ColorPalette(count: 3)
 
         let left = makeView(LeadingToTrailingDemoAccessibility.leftView, color: palette.next())
@@ -50,5 +50,7 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
             .pin(to: center)
             .leadingToTrailingEdge(constant: 10)
             .activate()
+
+        descriptionLabel.text = "This demonstrates how the trailing edge of a primary view can be pinned to the leading edge of a secondary view and how the leading edge of a primary view can be pinned to the trailing edge of a secondary view."
     }
 }

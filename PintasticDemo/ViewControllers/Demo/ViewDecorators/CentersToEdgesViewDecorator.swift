@@ -11,7 +11,7 @@ import Pintastic
 
 struct CentersToEdgesViewDecorator: ViewDecorator {
 
-    func decorate(view: UIView) {
+    func decorate(view: UIView, descriptionLabel: UILabel) {
 
         let palette = ColorPalette(count: 4)
 
@@ -84,5 +84,7 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
             .leadingEdgeToCenter()
             .topEdgeToCenter()
             .activate()
+
+        descriptionLabel.text = "This demonstrates how the leading, trailing, top, and bottom edges of a primary view can be pinned to the center of a secondary view."
     }
 }

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol ViewDecorator {
-    func decorate(view: UIView)
+    func decorate(view: UIView, descriptionLabel: UILabel)
 }
 
 extension ViewDecorator {

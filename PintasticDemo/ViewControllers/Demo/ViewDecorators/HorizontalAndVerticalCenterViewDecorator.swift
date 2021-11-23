@@ -10,7 +10,7 @@ import UIKit
 import Pintastic
 
 struct HorizontalAndVerticalCenterViewDecorator: ViewDecorator {
-    func decorate(view: UIView) {
+    func decorate(view: UIView, descriptionLabel: UILabel) {
 
         let palette = ColorPalette(count: 2)
 
@@ -34,5 +34,7 @@ struct HorizontalAndVerticalCenterViewDecorator: ViewDecorator {
             .horizontalCenters(multiplier: 0.5)
             .verticalCenters(multiplier: 0.5)
             .activate()
+
+        descriptionLabel.text = "This demonstrates how the horizontal and vertical centers of the primary view can be pinned to the horizontal and vertical centers of the secondary view. In this example the nested view applies a multipler to offset the center from containing view."
     }
 }

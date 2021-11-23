@@ -10,7 +10,7 @@ import UIKit
 import Pintastic
 
 struct EqualWidthsAndHeightsViewDecorator: ViewDecorator {
-    func decorate(view: UIView) {
+    func decorate(view: UIView, descriptionLabel: UILabel) {
 
         let palette = ColorPalette(count: 2)
 
@@ -45,5 +45,7 @@ struct EqualWidthsAndHeightsViewDecorator: ViewDecorator {
             .widths()
             .heights()
             .activate()
+
+        descriptionLabel.text = "This demonstrates how the width and height of the primary view can be pinned to the width and height of the secondary view."
     }
 }

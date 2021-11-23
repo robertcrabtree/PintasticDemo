@@ -10,7 +10,7 @@ import UIKit
 import Pintastic
 
 struct WidthToHeightViewDecorator: ViewDecorator {
-    func decorate(view: UIView) {
+    func decorate(view: UIView, descriptionLabel: UILabel) {
 
         let palette = ColorPalette(count: 2)
 
@@ -45,5 +45,7 @@ struct WidthToHeightViewDecorator: ViewDecorator {
             .widths(multiplier: 0.25)
             .heightToWidth(multiplier: 0.5)
             .activate()
+
+        descriptionLabel.text = "This demonstrates how the width of a view can be pinned to its height and how the height of a view can be pinned to its width. This example applies a multiplier to create proportional dimensions rather than equal dimesnsions."
     }
 }
