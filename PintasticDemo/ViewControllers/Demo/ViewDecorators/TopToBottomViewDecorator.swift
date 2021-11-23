@@ -43,13 +43,13 @@ struct TopToBottomViewDecorator: ViewDecorator {
 
         top
             .pin(to: center)
-            .bottomToTopEdge(constant: -10)
+            .above(constant: -10)
             .activate()
 
 
         bottom
             .pin(to: center)
-            .topToBottomEdge(constant: 10)
+            .below(constant: 10)
             .activate()
 
         descriptionLabel.text = "This demonstrates how the bottom edge of a primary view can be pinned to the top edge of a secondary view and how the top edge of a primary view can be pinned to the bottom edge of a secondary view."

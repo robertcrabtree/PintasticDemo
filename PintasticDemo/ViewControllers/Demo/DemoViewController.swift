@@ -54,10 +54,10 @@ class DemoViewController: UIViewController {
 
         contentView
             .pin(to: view)
-            .custom(withIdentifier: "width", builder: {
+            .using(constraintIdentifier: "width", constraint: {
                 contentView.widthAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.heightAnchor)
             })
-            .custom(withIdentifier: "height", builder: {
+            .using(constraintIdentifier: "height", constraint: {
                 contentView.heightAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.widthAnchor)
             })
             .widthToHeight()
@@ -72,7 +72,7 @@ class DemoViewController: UIViewController {
 
         descriptionLabel
             .pin(to: contentView)
-            .topToBottomEdge()
+            .below()
             .activate()
 
         viewDecorator.decorate(view: contentView, descriptionLabel: descriptionLabel)
