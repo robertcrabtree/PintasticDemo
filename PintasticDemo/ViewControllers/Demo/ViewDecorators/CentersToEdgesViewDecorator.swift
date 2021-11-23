@@ -48,7 +48,7 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
             .pin(to: topLeft)
             .widths()
             .heights()
-            .leadingEdgeToHorizontalCenter()
+            .leadingToHorizontalCenter()
             .topEdges()
             .activate()
 
@@ -58,7 +58,7 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
             .widths()
             .heights()
             .leadingEdges()
-            .topEdgeToVerticalCenter()
+            .topToVerticalCenter()
             .activate()
 
         bottomLeft
@@ -66,7 +66,7 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
             .pin(to: bottomRight)
             .widths()
             .heights()
-            .trailingEdgeToHorizontalCenter()
+            .trailingToHorizontalCenter()
             .bottomEdges()
             .activate()
 
@@ -81,8 +81,8 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
             .pin(to: topLeft)
             .widths(multiplier: 0.5)
             .heights(multiplier: 0.5)
-            .leadingEdgeToHorizontalCenter()
-            .topEdgeToVerticalCenter()
+            .leadingToHorizontalCenter()
+            .topToVerticalCenter()
             .activate()
 
         descriptionLabel.text = "This demonstrates how the leading, trailing, top, and bottom edges of a primary view can be pinned to the center of a secondary view."
