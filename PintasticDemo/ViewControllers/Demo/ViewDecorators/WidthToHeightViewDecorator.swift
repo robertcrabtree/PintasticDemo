@@ -27,8 +27,8 @@ struct WidthToHeightViewDecorator: ViewDecorator {
             .horizontalCenters()
             .activate()
 
-        let topView = makeView(WidthToHeightDemoAccessibility.leftView, color: .systemPurple)
-        let bottomView = makeView(WidthToHeightDemoAccessibility.rightView, color: .systemCyan)
+        let topView = makeView(WidthToHeightDemoAccessibility.leftView, color: Colors.next())
+        let bottomView = makeView(WidthToHeightDemoAccessibility.rightView, color: Colors.next())
 
         stack.addArrangedSubview(topView)
         stack.addArrangedSubview(bottomView)

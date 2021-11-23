@@ -11,7 +11,7 @@ import UIKit
 
 struct EdgeViewDecorator: ViewDecorator {
     func decorate(view: UIView) {
-        makeView(EdgeDemoAccessibility.childView, color: .systemOrange)
+        makeView(EdgeDemoAccessibility.childView, color: Colors.next())
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
             .leadingEdges(constant: 20)

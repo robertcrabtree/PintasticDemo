@@ -11,7 +11,7 @@ import UIKit
 
 struct CustomConstraintViewDecorator: ViewDecorator {
     func decorate(view: UIView) {
-        let customView = makeView(CustomConstraintDemoAccessibility.childView, color: .systemPurple)
+        let customView = makeView(CustomConstraintDemoAccessibility.childView, color: Colors.next())
         customView
             .addToSuperview(view)
             .pin(to: view)

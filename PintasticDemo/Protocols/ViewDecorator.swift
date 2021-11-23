@@ -17,7 +17,7 @@ extension ViewDecorator {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.accessibilityIdentifier = accessibility.accessibility
-        view.backgroundColor = color.withAlphaComponent(0.5)
+        view.backgroundColor = color
         return view
     }
 }

@@ -27,8 +27,8 @@ struct EqualWidthsAndHeightsViewDecorator: ViewDecorator {
             .horizontalCenters()
             .activate()
 
-        let left = makeView(EqualWidthsAndHeightsDemoAccessibility.leftView, color: .systemYellow)
-        let right = makeView(EqualWidthsAndHeightsDemoAccessibility.rightView, color: .systemPurple)
+        let left = makeView(EqualWidthsAndHeightsDemoAccessibility.leftView, color: Colors.next())
+        let right = makeView(EqualWidthsAndHeightsDemoAccessibility.rightView, color: Colors.next())
 
         stack.addArrangedSubview(left)
         stack.addArrangedSubview(right)

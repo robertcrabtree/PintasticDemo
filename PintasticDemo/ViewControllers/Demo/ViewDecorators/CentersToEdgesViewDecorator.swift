@@ -14,23 +14,23 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
     func decorate(view: UIView) {
         let topLeft = makeView(
             CentersToEdgesDemoAccessibility.topLeftView,
-            color: .systemRed
+            color: Colors.next()
         )
         let topRight = makeView(
             CentersToEdgesDemoAccessibility.topRightView,
-            color: .systemBlue
+            color: Colors.next()
         )
         let bottomRight = makeView(
             CentersToEdgesDemoAccessibility.bottomRightView,
-            color: .systemGreen
+            color: Colors.next()
         )
         let bottomLeft = makeView(
             CentersToEdgesDemoAccessibility.bottomLeftView,
-            color: .systemYellow
+            color: Colors.next()
         )
         let center = makeView(
             CentersToEdgesDemoAccessibility.centerView,
-            color: .systemBrown
+            color: .clear
         )
 
         topLeft

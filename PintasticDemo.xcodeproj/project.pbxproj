@@ -37,6 +37,7 @@
 		D4604442274B81DA00E37428 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4604441274B81DA00E37428 /* ViewControllerFactory.swift */; };
 		D4604444274C722800E37428 /* MenuFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4604443274C722800E37428 /* MenuFlowController.swift */; };
 		D4604446274C750E00E37428 /* MenuFlowControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4604445274C750E00E37428 /* MenuFlowControllerDelegate.swift */; };
+		D4604448274C7B6300E37428 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4604447274C7B6300E37428 /* Colors.swift */; };
 		D46DCA71274B33F3006D086B /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D8893274A4B690018B8CD /* Accessibility.swift */; };
 		D46DCA74274B4CA1006D086B /* PintasticEdgeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46DCA73274B4CA1006D086B /* PintasticEdgeDemoUITests.swift */; };
 		D46DCA76274B4DD3006D086B /* PintasticCentersToEdgesDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46DCA75274B4DD3006D086B /* PintasticCentersToEdgesDemoUITests.swift */; };
@@ -100,6 +101,7 @@
 		D4604441274B81DA00E37428 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		D4604443274C722800E37428 /* MenuFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFlowController.swift; sourceTree = "<group>"; };
 		D4604445274C750E00E37428 /* MenuFlowControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFlowControllerDelegate.swift; sourceTree = "<group>"; };
+		D4604447274C7B6300E37428 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D46DCA73274B4CA1006D086B /* PintasticEdgeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticEdgeDemoUITests.swift; sourceTree = "<group>"; };
 		D46DCA75274B4DD3006D086B /* PintasticCentersToEdgesDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticCentersToEdgesDemoUITests.swift; sourceTree = "<group>"; };
 		D46DCA77274B4E63006D086B /* PintasticCustomConstraintDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticCustomConstraintDemoUITests.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 		D4604439274B7A4B00E37428 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D4604447274C7B6300E37428 /* Colors.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				D42D887F274A36A70018B8CD /* MenuViewController.swift in Sources */,
 				D42D8881274A37AA0018B8CD /* MenuCell.swift in Sources */,
 				D42D888E274A43A30018B8CD /* ViewDecorator.swift in Sources */,
+				D4604448274C7B6300E37428 /* Colors.swift in Sources */,
 				D42D8894274A4B690018B8CD /* Accessibility.swift in Sources */,
 				D460443E274B808C00E37428 /* Dependencies.swift in Sources */,
 				D41E0355274A349E00AF1E8E /* SceneDelegate.swift in Sources */,

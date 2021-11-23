@@ -11,8 +11,8 @@ import Pintastic
 
 struct HorizontalAndVerticalCenterViewDecorator: ViewDecorator {
     func decorate(view: UIView) {
-        let container = makeView(HorizontalAndVerticalCenterDemoAccessibility.containerView, color: .systemPink)
-        let nested = makeView(HorizontalAndVerticalCenterDemoAccessibility.nestedView, color: .systemPurple)
+        let container = makeView(HorizontalAndVerticalCenterDemoAccessibility.containerView, color: Colors.next())
+        let nested = makeView(HorizontalAndVerticalCenterDemoAccessibility.nestedView, color: Colors.next())
 
         container
             .addToSuperview(view)

@@ -47,6 +47,7 @@ class MenuViewController: UITableViewController {
             withIdentifier: MenuCell.cellID, for: indexPath) as! MenuCell
         cell.demoTitleLabel.text = viewModel.title(for: indexPath)
         cell.accessibilityIdentifier = viewModel.accessibility(for: indexPath)
+        cell.backgroundColor = Colors.next()
         return cell
     }
 

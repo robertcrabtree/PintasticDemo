@@ -11,9 +11,9 @@ import UIKit
 
 struct TopToBottomViewDecorator: ViewDecorator {
     func decorate(view: UIView) {
-        let top = makeView(TopToBottomDemoAccessibility.topView, color: .systemOrange)
-        let center = makeView(TopToBottomDemoAccessibility.centerView, color: .systemGreen)
-        let bottom = makeView(TopToBottomDemoAccessibility.bottomView, color: .systemTeal)
+        let top = makeView(TopToBottomDemoAccessibility.topView, color: Colors.next())
+        let center = makeView(TopToBottomDemoAccessibility.centerView, color: Colors.next())
+        let bottom = makeView(TopToBottomDemoAccessibility.bottomView, color: Colors.next())
 
         top
             .addToSuperview(view)

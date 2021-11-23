@@ -11,9 +11,9 @@ import UIKit
 
 struct LeadingToTrailingViewDecorator: ViewDecorator {
     func decorate(view: UIView) {
-        let left = makeView(LeadingToTrailingDemoAccessibility.leftView, color: .systemOrange)
-        let center = makeView(LeadingToTrailingDemoAccessibility.centerView, color: .systemGreen)
-        let right = makeView(LeadingToTrailingDemoAccessibility.rightView, color: .systemTeal)
+        let left = makeView(LeadingToTrailingDemoAccessibility.leftView, color: Colors.next())
+        let center = makeView(LeadingToTrailingDemoAccessibility.centerView, color: Colors.next())
+        let right = makeView(LeadingToTrailingDemoAccessibility.rightView, color: Colors.next())
 
         left
             .addToSuperview(view)
