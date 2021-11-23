@@ -11,17 +11,17 @@ struct MenuViewModel {
 
     let demoDataSource: DemoDataSource
 
-    var demoCount: Int { demoDataSource.demos.count }
+    var demoCount: Int { demoDataSource.count }
 
     func identifier(for indexPath: IndexPath) -> DemoIdentifier {
-        demoDataSource.demos[indexPath.row].identifier
+        demoDataSource[indexPath.row].identifier
     }
 
     func title(for indexPath: IndexPath) -> String {
-        demoDataSource.demos[indexPath.row].title
+        demoDataSource[indexPath.row].title
     }
 
     func accessibility(for indexPath: IndexPath) -> String {
-        demoDataSource.demos[indexPath.row].identifier.accessibility
+        demoDataSource[indexPath.row].identifier.accessibility
     }
 }

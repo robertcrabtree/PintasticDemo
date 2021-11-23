@@ -8,7 +8,8 @@
 import Foundation
 
 protocol DemoDataSource {
-    var demos: [Demo] { get }
+    var count: Int { get }
+    subscript(index: Int) -> Demo { get }
     subscript(identifier: DemoIdentifier) -> Demo? { get }
 }
 
@@ -19,6 +20,12 @@ class DefaultDemoDataSource: DemoDataSource {
             Demo(identifier: $0, title: $0.title)
         }
     }()
+
+    var count: Int { demos.count }
+
+    subscript(index: Int) -> Demo {
+        demos[index]
+    }
 
     subscript(identifier: DemoIdentifier) -> Demo? {
         demos.first(where: { $0.identifier == identifier })
