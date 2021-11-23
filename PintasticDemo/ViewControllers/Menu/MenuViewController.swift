@@ -21,7 +21,7 @@ class MenuViewController: UITableViewController {
         self.viewControllerFactory = viewControllerFactory
         self.viewModel = viewModel
         self.palette = .init(count: viewModel.demoCount)
-        super.init(nibName: nil, bundle: nil)
+        super.init(style: .insetGrouped)
     }
     
     required init?(coder: NSCoder) {
