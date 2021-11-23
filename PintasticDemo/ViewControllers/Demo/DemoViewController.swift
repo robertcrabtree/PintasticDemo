@@ -13,10 +13,11 @@ class DemoViewController: UIViewController {
     private let viewDecorator: ViewDecorator
 
     let descriptionLabel: UILabel = {
-        let label = UILabel()
+        let label = VerticallyAlignedLabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
+        label.contentMode = .top
         return label
     }()
 
@@ -71,7 +72,7 @@ class DemoViewController: UIViewController {
 
         descriptionLabel
             .pin(to: contentView)
-            .topToBottomEdge(constant: 10)
+            .topToBottomEdge()
             .activate()
 
         viewDecorator.decorate(view: contentView, descriptionLabel: descriptionLabel)
