@@ -43,23 +43,35 @@ class DemoViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .never
 
         view.addSubview(contentView)
-        contentView.pin(to: view.safeAreaLayoutGuide)
-            .leadingEdges()
-            .trailingEdges()
+        view.addSubview(descriptionLabel)
+
+        contentView
+            .pin(to: view.safeAreaLayoutGuide)
             .topEdges()
+            .horizontalCenters()
             .activate()
 
-        view.addSubview(descriptionLabel)
+        contentView
+            .pin(to: view)
+            .custom(withIdentifier: "width", builder: {
+                contentView.widthAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.heightAnchor)
+            })
+            .custom(withIdentifier: "height", builder: {
+                contentView.heightAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.widthAnchor)
+            })
+            .widthToHeight()
+            .activate()
+
         descriptionLabel
             .pin(to: view.safeAreaLayoutGuide)
             .leadingEdges(constant: 20)
             .trailingEdges(constant: -20)
-            .bottomEdges(constant: -40)
+            .bottomEdges()
             .activate()
 
         descriptionLabel
             .pin(to: contentView)
-            .topToBottomEdge(constant: 20)
+            .topToBottomEdge(constant: 10)
             .activate()
 
         viewDecorator.decorate(view: contentView, descriptionLabel: descriptionLabel)

@@ -11,17 +11,29 @@ import UIKit
 
 struct EdgeViewDecorator: ViewDecorator {
     func decorate(view: UIView, descriptionLabel: UILabel) {
-        let palette = ColorPalette(count: 1)
 
-        makeView(EdgeDemoAccessibility.childView, color: palette.next())
+        let palette = ColorPalette(count: 2)
+
+        let container = makeView(HorizontalAndVerticalCenterDemoAccessibility.containerView, color: palette.next())
+        let nested = makeView(HorizontalAndVerticalCenterDemoAccessibility.nestedView, color: palette.next())
+
+        container
             .addToSuperview(view)
-            .pin(to: view.safeAreaLayoutGuide)
-            .leadingEdges(constant: 20)
-            .trailingEdges(constant: -20)
-            .topEdges(constant: 20)
-            .bottomEdges(constant: -20)
+            .pin(to: view)
+            .centers()
+            .widths(multiplier: 0.25)
+            .heights(multiplier: 0.25)
             .activate()
 
-        descriptionLabel.text = "This demonstrates how the leading, trailing, top, and bottom edges of a primary view can be pinned to the edges of a secondary view."
+        nested
+            .addToSuperview(container)
+            .pin(to: container)
+            .leadingEdges(constant: 10)
+            .trailingEdges(constant: -10)
+            .topEdges(constant: 10)
+            .bottomEdges(constant: -10)
+            .activate()
+
+        descriptionLabel.text = "This demonstrates how the leading, trailing, top, and bottom edges of a primary view can be pinned to the edges of a secondary view. In this example constants are applied to each edge so the nested view is smaller than the containing view."
     }
 }

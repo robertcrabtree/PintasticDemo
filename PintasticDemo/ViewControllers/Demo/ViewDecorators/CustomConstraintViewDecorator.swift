@@ -19,10 +19,10 @@ struct CustomConstraintViewDecorator: ViewDecorator {
             .pin(to: view)
             .centers()
             .custom(withIdentifier: "width", builder: {
-                customView.widthAnchor.constraint(equalToConstant: 50.0)
+                customView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.25)
             })
             .custom(withIdentifier: "height", builder: {
-                customView.heightAnchor.constraint(equalToConstant: 50.0)
+                customView.heightAnchor.constraint(equalTo: customView.widthAnchor)
             })
             .activate()
 
