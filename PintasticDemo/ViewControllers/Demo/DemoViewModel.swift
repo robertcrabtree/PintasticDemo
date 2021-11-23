@@ -13,6 +13,6 @@ struct DemoViewModel {
     let identifier: DemoIdentifier
 
     var title: String? {
-        demoDataSource.demo(identifier: identifier)?.title
+        demoDataSource[identifier]?.title
     }
 }

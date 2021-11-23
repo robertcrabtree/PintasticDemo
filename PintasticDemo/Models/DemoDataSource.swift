@@ -9,7 +9,7 @@ import Foundation
 
 protocol DemoDataSource {
     var demos: [Demo] { get }
-    func demo(identifier: DemoIdentifier) -> Demo?
+    subscript(identifier: DemoIdentifier) -> Demo? { get }
 }
 
 class DefaultDemoDataSource: DemoDataSource {
@@ -20,7 +20,7 @@ class DefaultDemoDataSource: DemoDataSource {
         }
     }()
 
-    func demo(identifier: DemoIdentifier) -> Demo? {
+    subscript(identifier: DemoIdentifier) -> Demo? {
         demos.first(where: { $0.identifier == identifier })
     }
 }
