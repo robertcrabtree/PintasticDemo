@@ -11,20 +11,18 @@ import UIKit
 
 struct CustomConstraintViewDecorator: ViewDecorator {
     func decorate(view: UIView) {
-        let customView = makeView(CustomConstraintDemoAccessibility.childView, color: Colors.next())
+        let palette = ColorPalette(count: 1)
+
+        let customView = makeView(CustomConstraintDemoAccessibility.childView, color: palette.next())
         customView
             .addToSuperview(view)
             .pin(to: view)
-            .horizontalCenters()
-            .verticalCenters()
+            .centers()
             .custom(withIdentifier: "width", builder: {
                 customView.widthAnchor.constraint(equalToConstant: 50.0)
             })
             .custom(withIdentifier: "height", builder: {
                 customView.heightAnchor.constraint(equalToConstant: 50.0)
-            })
-            .constraint(withIdentifier: "width", handler: { constraint in
-                constraint?.constant = 100.0
             })
             .activate()
     }

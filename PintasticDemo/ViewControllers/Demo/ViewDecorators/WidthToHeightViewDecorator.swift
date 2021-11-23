@@ -12,6 +12,8 @@ import Pintastic
 struct WidthToHeightViewDecorator: ViewDecorator {
     func decorate(view: UIView) {
 
+        let palette = ColorPalette(count: 2)
+
         let stack: UIStackView = {
             let stack = UIStackView()
             stack.translatesAutoresizingMaskIntoConstraints = false
@@ -23,12 +25,11 @@ struct WidthToHeightViewDecorator: ViewDecorator {
         stack
             .addToSuperview(view)
             .pin(to: view)
-            .verticalCenters()
-            .horizontalCenters()
+            .centers()
             .activate()
 
-        let topView = makeView(WidthToHeightDemoAccessibility.leftView, color: Colors.next())
-        let bottomView = makeView(WidthToHeightDemoAccessibility.rightView, color: Colors.next())
+        let topView = makeView(WidthToHeightDemoAccessibility.leftView, color: palette.next())
+        let bottomView = makeView(WidthToHeightDemoAccessibility.rightView, color: palette.next())
 
         stack.addArrangedSubview(topView)
         stack.addArrangedSubview(bottomView)

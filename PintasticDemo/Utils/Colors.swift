@@ -7,27 +7,32 @@
 
 import UIKit
 
-struct Colors {
+class ColorPalette {
 
-    private static let colors: [UIColor] = [
-        .systemRed,
-        .systemBlue,
-        .systemCyan,
-        .systemMint,
-        .systemPink,
-        .systemTeal,
-        .systemIndigo,
-        .systemOrange,
-        .systemPurple,
-        .systemYellow,
-    ]
+    private let count: Int
+    private var index: Int = 0
+    private let palette: [UIColor]
 
-    private static var index = 0
+    init(count: Int) {
+        self.count = count
+        self.palette = (1...count)
+            .map { 1.0 / (Double(count) / Double($0)) }
+            .map {
+                UIColor(
+                    hue: $0,
+                    saturation: 0.5,
+                    brightness: 1.0,
+                    alpha: 0.75
+                )
+            }
+    }
 
-    static func next() -> UIColor {
-        defer {
-            index = (index + 1) % colors.count
-        }
-        return colors[index].withAlphaComponent(0.5)
+    func next() -> UIColor {
+        defer { index = (index + 1) % count }
+        return palette[index]
+    }
+
+    subscript(index: Int) -> UIColor {
+        palette[index]
     }
 }

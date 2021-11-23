@@ -12,21 +12,24 @@ import Pintastic
 struct CentersToEdgesViewDecorator: ViewDecorator {
 
     func decorate(view: UIView) {
+
+        let palette = ColorPalette(count: 4)
+
         let topLeft = makeView(
             CentersToEdgesDemoAccessibility.topLeftView,
-            color: Colors.next()
+            color: palette.next()
         )
         let topRight = makeView(
             CentersToEdgesDemoAccessibility.topRightView,
-            color: Colors.next()
+            color: palette.next()
         )
         let bottomRight = makeView(
             CentersToEdgesDemoAccessibility.bottomRightView,
-            color: Colors.next()
+            color: palette.next()
         )
         let bottomLeft = makeView(
             CentersToEdgesDemoAccessibility.bottomLeftView,
-            color: Colors.next()
+            color: palette.next()
         )
         let center = makeView(
             CentersToEdgesDemoAccessibility.centerView,

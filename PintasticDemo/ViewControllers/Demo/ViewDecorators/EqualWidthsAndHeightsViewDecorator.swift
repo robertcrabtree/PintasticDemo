@@ -12,6 +12,8 @@ import Pintastic
 struct EqualWidthsAndHeightsViewDecorator: ViewDecorator {
     func decorate(view: UIView) {
 
+        let palette = ColorPalette(count: 2)
+
         let stack: UIStackView = {
             let stack = UIStackView()
             stack.translatesAutoresizingMaskIntoConstraints = false
@@ -23,12 +25,11 @@ struct EqualWidthsAndHeightsViewDecorator: ViewDecorator {
         stack
             .addToSuperview(view)
             .pin(to: view)
-            .verticalCenters()
-            .horizontalCenters()
+            .centers()
             .activate()
 
-        let left = makeView(EqualWidthsAndHeightsDemoAccessibility.leftView, color: Colors.next())
-        let right = makeView(EqualWidthsAndHeightsDemoAccessibility.rightView, color: Colors.next())
+        let left = makeView(EqualWidthsAndHeightsDemoAccessibility.leftView, color: palette.next())
+        let right = makeView(EqualWidthsAndHeightsDemoAccessibility.rightView, color: palette.next())
 
         stack.addArrangedSubview(left)
         stack.addArrangedSubview(right)

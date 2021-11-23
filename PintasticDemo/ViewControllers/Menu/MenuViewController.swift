@@ -13,12 +13,14 @@ class MenuViewController: UITableViewController {
 
     let viewControllerFactory: ViewControllerFactory
     let viewModel: MenuViewModel
+    let palette: ColorPalette
 
     weak var flowControllerDelegate: MenuFlowControllerDelegate?
 
     init(viewControllerFactory: ViewControllerFactory, viewModel: MenuViewModel) {
         self.viewControllerFactory = viewControllerFactory
         self.viewModel = viewModel
+        self.palette = .init(count: viewModel.demoCount)
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -47,7 +49,7 @@ class MenuViewController: UITableViewController {
             withIdentifier: MenuCell.cellID, for: indexPath) as! MenuCell
         cell.demoTitleLabel.text = viewModel.title(for: indexPath)
         cell.accessibilityIdentifier = viewModel.accessibility(for: indexPath)
-        cell.backgroundColor = Colors.next()
+        cell.backgroundColor = palette[indexPath.row]
         return cell
     }
 
