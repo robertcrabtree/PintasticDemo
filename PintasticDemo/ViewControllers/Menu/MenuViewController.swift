@@ -14,6 +14,8 @@ class MenuViewController: UITableViewController {
     let viewControllerFactory: ViewControllerFactory
     let viewModel: MenuViewModel
 
+    weak var flowControllerDelegate: MenuFlowControllerDelegate?
+
     init(viewControllerFactory: ViewControllerFactory, viewModel: MenuViewModel) {
         self.viewControllerFactory = viewControllerFactory
         self.viewModel = viewModel
@@ -51,9 +53,9 @@ class MenuViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 
-        let controller = viewControllerFactory.makeDemoViewController(
-            identifier: viewModel.identifier(for: indexPath)
+        flowControllerDelegate?.menuViewController(
+            self,
+            didSelectDemoWithIdentifier: viewModel.identifier(for: indexPath)
         )
-        show(controller, sender: self)
     }
 }

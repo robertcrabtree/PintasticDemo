@@ -21,9 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window = UIWindow(windowScene: windowScene)
 
-        let nav = UINavigationController(rootViewController: deps.makeMenuViewController())
-
-        window?.rootViewController = nav
+        window?.rootViewController = MenuFlowController(viewControllerFactory: deps)
         window?.makeKeyAndVisible()
     }
 

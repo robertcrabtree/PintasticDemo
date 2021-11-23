@@ -19,7 +19,7 @@ struct TopToBottomViewDecorator: ViewDecorator {
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
             .widths(multiplier: 0.25)
-            .heights(multiplier: 0.25)
+            .heightToWidth()
             .horizontalCenters()
             .activate()
 
@@ -27,7 +27,7 @@ struct TopToBottomViewDecorator: ViewDecorator {
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
             .widths(multiplier: 0.25)
-            .heights(multiplier: 0.25)
+            .heightToWidth()
             .verticalCenters()
             .horizontalCenters()
             .activate()
@@ -36,7 +36,7 @@ struct TopToBottomViewDecorator: ViewDecorator {
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
             .widths(multiplier: 0.25)
-            .heights(multiplier: 0.25)
+            .heightToWidth()
             .horizontalCenters()
             .activate()
 

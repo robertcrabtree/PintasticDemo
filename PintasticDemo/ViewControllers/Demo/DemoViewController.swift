@@ -25,7 +25,7 @@ class DemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = viewModel.title
-        viewDecorator.decorate(view: view)
         view.backgroundColor = .systemBackground
+        viewDecorator.decorate(view: view)
     }
 }
