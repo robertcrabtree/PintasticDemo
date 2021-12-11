@@ -25,13 +25,13 @@ class MenuCell: UITableViewCell, CellIdentifiable {
         demoTitleLabel
             .pin()
             .height(constant: 44)
+            .constraint(ofType: .height, handler: { constraint in
+                constraint?.priority = .defaultHigh
+            })
             .activate()
 
         demoTitleLabel
             .pin(to: contentView)
-            .constraint(ofType: .height, handler: { constraint in
-                constraint?.priority = .defaultHigh
-            })
             .leadingEdges(constant: 10)
             .trailingEdges(constant: -10)
             .topEdges(constant: 10)

@@ -32,7 +32,8 @@ enum CustomConstraintDemoAccessibility: String, Accessibility, CaseIterable {
 }
 
 enum EdgeDemoAccessibility: String, Accessibility, CaseIterable {
-    case childView
+    case containerView
+    case nestedView
 }
 
 enum EqualWidthsAndHeightsDemoAccessibility: String, Accessibility, CaseIterable {

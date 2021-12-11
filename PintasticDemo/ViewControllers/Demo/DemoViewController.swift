@@ -54,10 +54,10 @@ class DemoViewController: UIViewController {
 
         contentView
             .pin(to: view)
-            .using(constraintIdentifier: "width", constraint: {
+            .addConstraint(withIdentifier: "width", constraint: {
                 contentView.widthAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.heightAnchor)
             })
-            .using(constraintIdentifier: "height", constraint: {
+            .addConstraint(withIdentifier: "height", constraint: {
                 contentView.heightAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.widthAnchor)
             })
             .activate()

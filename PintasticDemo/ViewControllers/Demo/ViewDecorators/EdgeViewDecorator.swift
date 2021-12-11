@@ -14,8 +14,8 @@ struct EdgeViewDecorator: ViewDecorator {
 
         let palette = ColorPalette(count: 2)
 
-        let container = makeView(HorizontalAndVerticalCenterDemoAccessibility.containerView, color: palette.next())
-        let nested = makeView(HorizontalAndVerticalCenterDemoAccessibility.nestedView, color: palette.next())
+        let container = makeView(EdgeDemoAccessibility.containerView, color: palette.next())
+        let nested = makeView(EdgeDemoAccessibility.nestedView, color: palette.next())
 
         container
             .addToSuperview(view)

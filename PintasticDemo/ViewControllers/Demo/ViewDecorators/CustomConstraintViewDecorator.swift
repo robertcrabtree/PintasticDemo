@@ -18,10 +18,10 @@ struct CustomConstraintViewDecorator: ViewDecorator {
             .addToSuperview(view)
             .pin(to: view)
             .centers()
-            .using(constraintIdentifier: "width", constraint: {
+            .addConstraint(withIdentifier: "width", constraint: {
                 customView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.25)
             })
-            .using(constraintIdentifier: "height", constraint: {
+            .addConstraint(withIdentifier: "height", constraint: {
                 customView.heightAnchor.constraint(equalTo: customView.widthAnchor)
             })
             .activate()
