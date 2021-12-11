@@ -47,13 +47,13 @@ class DemoViewController: UIViewController {
         view.addSubview(descriptionLabel)
 
         contentView
-            .makePin(to: view.safeAreaLayoutGuide)
+            .pin(to: view.safeAreaLayoutGuide)
             .pinTopEdges()
             .pinHorizontalCenters()
             .activate()
 
         contentView
-            .makePin(to: view)
+            .pin(to: view)
             .addConstraint(withIdentifier: "width", constraint: {
                 contentView.widthAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.heightAnchor)
             })
@@ -68,14 +68,14 @@ class DemoViewController: UIViewController {
             .activate()
 
         descriptionLabel
-            .makePin(to: view.safeAreaLayoutGuide)
+            .pin(to: view.safeAreaLayoutGuide)
             .pinLeadingEdges(constant: 20)
             .pinTrailingEdges(constant: -20)
             .pinBottomEdges()
             .activate()
 
         descriptionLabel
-            .makePin(to: contentView)
+            .pin(to: contentView)
             .pinBelow()
             .activate()
 

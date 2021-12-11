@@ -24,7 +24,7 @@ struct EqualWidthsAndHeightsViewDecorator: ViewDecorator {
 
         stack
             .addToSuperview(view)
-            .makePin(to: view)
+            .pin(to: view)
             .pinCenters()
             .activate()
 
@@ -35,13 +35,13 @@ struct EqualWidthsAndHeightsViewDecorator: ViewDecorator {
         stack.addArrangedSubview(right)
 
         left
-            .makePin(to: view)
+            .pin(to: view)
             .pinWidths(multiplier: 0.25)
             .pinHeights(multiplier: 0.25)
             .activate()
 
         right
-            .makePin(to: left)
+            .pin(to: left)
             .pinWidths()
             .pinHeights()
             .activate()

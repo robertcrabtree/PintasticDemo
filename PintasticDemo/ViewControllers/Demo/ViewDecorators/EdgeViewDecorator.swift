@@ -19,7 +19,7 @@ struct EdgeViewDecorator: ViewDecorator {
 
         container
             .addToSuperview(view)
-            .makePin(to: view)
+            .pin(to: view)
             .pinCenters()
             .pinWidths(multiplier: 0.25)
             .pinHeights(multiplier: 0.25)
@@ -27,7 +27,7 @@ struct EdgeViewDecorator: ViewDecorator {
 
         nested
             .addToSuperview(container)
-            .makePin(to: container)
+            .pin(to: container)
             .pinLeadingEdges(constant: 10)
             .pinTrailingEdges(constant: -10)
             .pinTopEdges(constant: 10)

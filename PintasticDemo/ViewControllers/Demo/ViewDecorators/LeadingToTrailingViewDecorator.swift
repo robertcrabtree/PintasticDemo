@@ -19,7 +19,7 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
 
         left
             .addToSuperview(view)
-            .makePin(to: view.safeAreaLayoutGuide)
+            .pin(to: view.safeAreaLayoutGuide)
             .pinWidths(multiplier: 0.25)
             .pinVerticalCenters()
             .activate()
@@ -31,7 +31,7 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
 
         center
             .addToSuperview(view)
-            .makePin(to: view.safeAreaLayoutGuide)
+            .pin(to: view.safeAreaLayoutGuide)
             .pinWidths(multiplier: 0.25)
             .pinCenters()
             .activate()
@@ -43,7 +43,7 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
 
         right
             .addToSuperview(view)
-            .makePin(to: view.safeAreaLayoutGuide)
+            .pin(to: view.safeAreaLayoutGuide)
             .pinWidths(multiplier: 0.25)
             .pinVerticalCenters()
             .activate()
@@ -54,12 +54,12 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
             .activate()
 
         left
-            .makePin(to: center)
+            .pin(to: center)
             .pinToLeft(constant: -10)
             .activate()
 
         right
-            .makePin(to: center)
+            .pin(to: center)
             .pinToRight(constant: 10)
             .activate()
 

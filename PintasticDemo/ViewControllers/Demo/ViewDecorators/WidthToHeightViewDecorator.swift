@@ -24,7 +24,7 @@ struct WidthToHeightViewDecorator: ViewDecorator {
 
         stack
             .addToSuperview(view)
-            .makePin(to: view)
+            .pin(to: view)
             .pinCenters()
             .activate()
 
@@ -35,7 +35,7 @@ struct WidthToHeightViewDecorator: ViewDecorator {
         stack.addArrangedSubview(bottomView)
 
         topView
-            .makePin(to: view)
+            .pin(to: view)
             .pinWidths(multiplier: 0.25)
             .activate()
 
@@ -45,7 +45,7 @@ struct WidthToHeightViewDecorator: ViewDecorator {
             .activate()
 
         bottomView
-            .makePin(to: view)
+            .pin(to: view)
             .pinWidths(multiplier: 0.25)
             .activate()
 

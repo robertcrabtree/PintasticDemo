@@ -31,7 +31,7 @@ class MenuCell: UITableViewCell, CellIdentifiable {
             .activate()
 
         demoTitleLabel
-            .makePin(to: contentView)
+            .pin(to: contentView)
             .pinLeadingEdges(constant: 10)
             .pinTrailingEdges(constant: -10)
             .pinTopEdges(constant: 10)

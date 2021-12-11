@@ -16,7 +16,7 @@ struct CustomConstraintViewDecorator: ViewDecorator {
         let customView = makeView(CustomConstraintDemoAccessibility.childView, color: palette.next())
         customView
             .addToSuperview(view)
-            .makePin(to: view)
+            .pin(to: view)
             .pinCenters()
             .addConstraint(withIdentifier: "width", constraint: {
                 customView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.25)
