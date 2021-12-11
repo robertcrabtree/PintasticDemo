@@ -36,14 +36,14 @@ struct EqualWidthsAndHeightsViewDecorator: ViewDecorator {
 
         left
             .pin(to: view)
-            .widths(multiplier: 0.25)
-            .heights(multiplier: 0.25)
+            .equalWidths(multiplier: 0.25)
+            .equalHeights(multiplier: 0.25)
             .activate()
 
         right
             .pin(to: left)
-            .widths()
-            .heights()
+            .equalWidths()
+            .equalHeights()
             .activate()
 
         descriptionLabel.text = "This demonstrates how the width and height of the primary view can be pinned to the width and height of the secondary view."

@@ -36,22 +36,22 @@ struct WidthToHeightViewDecorator: ViewDecorator {
 
         topView
             .pin(to: view)
-            .widths(multiplier: 0.25)
+            .equalWidths(multiplier: 0.25)
             .activate()
 
         topView
             .pin()
-            .widthToHeight(multiplier: 2.0)
+            .widthEqualToHeight(multiplier: 2.0)
             .activate()
 
         bottomView
             .pin(to: view)
-            .widths(multiplier: 0.25)
+            .equalWidths(multiplier: 0.25)
             .activate()
 
         bottomView
             .pin()
-            .heightToWidth(multiplier: 0.5)
+            .heightEqualToWidth(multiplier: 0.5)
             .activate()
 
         descriptionLabel.text = "This demonstrates how the width of a view can be pinned to its height and how the height of a view can be pinned to its width. This example applies a multiplier to create proportional dimensions rather than equal dimesnsions."

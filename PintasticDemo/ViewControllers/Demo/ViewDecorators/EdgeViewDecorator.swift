@@ -21,8 +21,8 @@ struct EdgeViewDecorator: ViewDecorator {
             .addToSuperview(view)
             .pin(to: view)
             .centers()
-            .widths(multiplier: 0.25)
-            .heights(multiplier: 0.25)
+            .equalWidths(multiplier: 0.25)
+            .equalHeights(multiplier: 0.25)
             .activate()
 
         nested

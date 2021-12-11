@@ -22,19 +22,19 @@ struct HorizontalAndVerticalCenterViewDecorator: ViewDecorator {
             .pin(to: view)
             .horizontalCenters()
             .verticalCenters()
-            .widths(multiplier: 0.25)
+            .equalWidths(multiplier: 0.25)
             .activate()
 
         container
             .pin()
-            .heightToWidth()
+            .heightEqualToWidth()
             .activate()
 
         nested
             .addToSuperview(container)
             .pin(to: container)
-            .widths(multiplier: 0.25)
-            .heights(multiplier: 0.25)
+            .equalWidths(multiplier: 0.25)
+            .equalHeights(multiplier: 0.25)
             .horizontalCenters(multiplier: 0.5)
             .verticalCenters(multiplier: 0.5)
             .activate()

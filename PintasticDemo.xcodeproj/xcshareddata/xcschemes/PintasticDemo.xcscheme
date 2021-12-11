@@ -48,6 +48,16 @@
                ReferencedContainer = "container:PintasticDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "PintasticTests"
+               BuildableName = "PintasticTests"
+               BlueprintName = "PintasticTests"
+               ReferencedContainer = "container:../Pintastic">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
