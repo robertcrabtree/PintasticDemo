@@ -43,7 +43,7 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
             .activate()
 
         topLeft
-            .makePin()
+            .pin()
             .pinWidthEqualToHeight()
             .activate()
 

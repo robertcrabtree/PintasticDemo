@@ -28,7 +28,7 @@ struct CornersViewDecorator: ViewDecorator {
             .activate()
 
         center
-            .makePin()
+            .pin()
             .pinHeightEqualToWidth()
             .activate()
 

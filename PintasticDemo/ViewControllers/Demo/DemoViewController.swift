@@ -63,7 +63,7 @@ class DemoViewController: UIViewController {
             .activate()
 
         contentView
-            .makePin()
+            .pin()
             .pinWidthEqualToHeight()
             .activate()
 

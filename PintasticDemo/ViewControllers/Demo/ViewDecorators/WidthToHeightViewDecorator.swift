@@ -40,7 +40,7 @@ struct WidthToHeightViewDecorator: ViewDecorator {
             .activate()
 
         topView
-            .makePin()
+            .pin()
             .pinWidthEqualToHeight(multiplier: 2.0)
             .activate()
 
@@ -50,7 +50,7 @@ struct WidthToHeightViewDecorator: ViewDecorator {
             .activate()
 
         bottomView
-            .makePin()
+            .pin()
             .pinHeightEqualToWidth(multiplier: 0.5)
             .activate()
 
