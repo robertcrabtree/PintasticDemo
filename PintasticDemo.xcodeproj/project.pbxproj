@@ -28,6 +28,8 @@
 		D42D88A2274A7AF40018B8CD /* WidthToHeightViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A1274A7AF40018B8CD /* WidthToHeightViewDecorator.swift */; };
 		D42D88A5274A7DBF0018B8CD /* EqualWidthsAndHeightsViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A4274A7DBF0018B8CD /* EqualWidthsAndHeightsViewDecorator.swift */; };
 		D42D88A7274A82FF0018B8CD /* CentersToEdgesViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42D88A6274A82FF0018B8CD /* CentersToEdgesViewDecorator.swift */; };
+		D4443C3E2764D3B4001C6BF0 /* CornersViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4443C3D2764D3B4001C6BF0 /* CornersViewDecorator.swift */; };
+		D4443C402764D6A8001C6BF0 /* PintasticCornersDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4443C3F2764D6A8001C6BF0 /* PintasticCornersDemoUITests.swift */; };
 		D4604431274B721400E37428 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4604430274B721400E37428 /* MenuViewModel.swift */; };
 		D4604433274B728F00E37428 /* DemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4604432274B728F00E37428 /* DemoViewModel.swift */; };
 		D4604436274B77AA00E37428 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4604435274B77AA00E37428 /* Demo.swift */; };
@@ -94,6 +96,8 @@
 		D42D88A1274A7AF40018B8CD /* WidthToHeightViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidthToHeightViewDecorator.swift; sourceTree = "<group>"; };
 		D42D88A4274A7DBF0018B8CD /* EqualWidthsAndHeightsViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualWidthsAndHeightsViewDecorator.swift; sourceTree = "<group>"; };
 		D42D88A6274A82FF0018B8CD /* CentersToEdgesViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentersToEdgesViewDecorator.swift; sourceTree = "<group>"; };
+		D4443C3D2764D3B4001C6BF0 /* CornersViewDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornersViewDecorator.swift; sourceTree = "<group>"; };
+		D4443C3F2764D6A8001C6BF0 /* PintasticCornersDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintasticCornersDemoUITests.swift; sourceTree = "<group>"; };
 		D4604430274B721400E37428 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		D4604432274B728F00E37428 /* DemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewModel.swift; sourceTree = "<group>"; };
 		D4604435274B77AA00E37428 /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 				D48FFCA7274B4FDD006C25D8 /* PintasticLeadingToTrailingDemoUITests.swift */,
 				D48FFCA9274B506E006C25D8 /* PintasticTopToBottomDemoUITests.swift */,
 				D48FFCAB274B50D8006C25D8 /* PintasticWidthToHeightDemoUITests.swift */,
+				D4443C3F2764D6A8001C6BF0 /* PintasticCornersDemoUITests.swift */,
 			);
 			path = PintasticDemoUITests;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				D42D88A6274A82FF0018B8CD /* CentersToEdgesViewDecorator.swift */,
+				D4443C3D2764D3B4001C6BF0 /* CornersViewDecorator.swift */,
 				D4C7D929274AA2E800646A4F /* CustomConstraintViewDecorator.swift */,
 				D42D8890274A44FB0018B8CD /* EdgeViewDecorator.swift */,
 				D42D88A4274A7DBF0018B8CD /* EqualWidthsAndHeightsViewDecorator.swift */,
@@ -479,6 +485,7 @@
 				D41E0355274A349E00AF1E8E /* SceneDelegate.swift in Sources */,
 				D46C69B4274CC8DB00B1A15B /* VerticallyAlignedLabel.swift in Sources */,
 				D42D889A274A58760018B8CD /* TopToBottomViewDecorator.swift in Sources */,
+				D4443C3E2764D3B4001C6BF0 /* CornersViewDecorator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +512,7 @@
 				D46DCA7A274B4ED8006D086B /* PintasticEqualWidthsAndHeightsDemoUITests.swift in Sources */,
 				D46DCA7C274B4F35006D086B /* PintasticHorizontalAndVerticalCenterDemoUITests.swift in Sources */,
 				D48FFCA8274B4FDD006C25D8 /* PintasticLeadingToTrailingDemoUITests.swift in Sources */,
+				D4443C402764D6A8001C6BF0 /* PintasticCornersDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

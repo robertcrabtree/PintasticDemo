@@ -30,6 +30,8 @@ struct DefaultViewDecoratorFactory: ViewDecoratorFactory {
             return CentersToEdgesViewDecorator()
         case .customConstraint:
             return CustomConstraintViewDecorator()
+        case .corners:
+            return CornersViewDecorator()
         }
     }
 }

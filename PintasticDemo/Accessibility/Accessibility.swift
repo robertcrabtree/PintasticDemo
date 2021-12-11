@@ -27,6 +27,14 @@ enum CentersToEdgesDemoAccessibility: String, Accessibility, CaseIterable {
     case centerView
 }
 
+enum CornersDemoAccessibility: String, Accessibility, CaseIterable {
+    case topLeftView
+    case topRightView
+    case bottomRightView
+    case bottomLeftView
+    case centerView
+}
+
 enum CustomConstraintDemoAccessibility: String, Accessibility, CaseIterable {
     case childView
 }

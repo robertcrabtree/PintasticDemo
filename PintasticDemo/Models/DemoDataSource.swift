@@ -51,6 +51,8 @@ private extension DemoIdentifier {
             return "Equal Widths and Heights"
         case .customConstraint:
             return "Custom Constraint"
+        case .corners:
+            return "Corners"
         }
     }
 }

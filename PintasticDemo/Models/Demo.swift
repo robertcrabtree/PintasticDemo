@@ -16,6 +16,7 @@ enum DemoIdentifier: String, CaseIterable {
     case equalWidthsAndHeights
     case centersToEdges
     case customConstraint
+    case corners
 }
 
 struct Demo {
