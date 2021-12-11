@@ -40,6 +40,10 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
             .addToSuperview(view)
             .pin(to: view)
             .widths(multiplier: 0.25 * 2.0 / 3.0)
+            .activate()
+
+        topLeft
+            .pin()
             .widthToHeight()
             .activate()
 

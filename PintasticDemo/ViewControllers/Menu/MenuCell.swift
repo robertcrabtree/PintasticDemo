@@ -21,9 +21,14 @@ class MenuCell: UITableViewCell, CellIdentifiable {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         contentView.addSubview(demoTitleLabel)
+
+        demoTitleLabel
+            .pin()
+            .height(constant: 44)
+            .activate()
+
         demoTitleLabel
             .pin(to: contentView)
-            .height(constant: 44)
             .constraint(ofType: .height, handler: { constraint in
                 constraint?.priority = .defaultHigh
             })

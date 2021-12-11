@@ -60,6 +60,10 @@ class DemoViewController: UIViewController {
             .using(constraintIdentifier: "height", constraint: {
                 contentView.heightAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.widthAnchor)
             })
+            .activate()
+
+        contentView
+            .pin()
             .widthToHeight()
             .activate()
 

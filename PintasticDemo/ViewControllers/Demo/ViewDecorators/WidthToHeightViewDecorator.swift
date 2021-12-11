@@ -37,12 +37,20 @@ struct WidthToHeightViewDecorator: ViewDecorator {
         topView
             .pin(to: view)
             .widths(multiplier: 0.25)
+            .activate()
+
+        topView
+            .pin()
             .widthToHeight(multiplier: 2.0)
             .activate()
 
         bottomView
             .pin(to: view)
             .widths(multiplier: 0.25)
+            .activate()
+
+        bottomView
+            .pin()
             .heightToWidth(multiplier: 0.5)
             .activate()
 

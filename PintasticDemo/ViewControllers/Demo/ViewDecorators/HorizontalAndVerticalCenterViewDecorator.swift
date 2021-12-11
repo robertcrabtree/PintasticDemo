@@ -23,6 +23,10 @@ struct HorizontalAndVerticalCenterViewDecorator: ViewDecorator {
             .horizontalCenters()
             .verticalCenters()
             .widths(multiplier: 0.25)
+            .activate()
+
+        container
+            .pin()
             .heightToWidth()
             .activate()
 
