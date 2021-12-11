@@ -48,8 +48,8 @@ class DemoViewController: UIViewController {
 
         contentView
             .pin(to: view.safeAreaLayoutGuide)
-            .topEdges()
-            .horizontalCenters()
+            .pinTopEdges()
+            .pinHorizontalCenters()
             .activate()
 
         contentView
@@ -69,14 +69,14 @@ class DemoViewController: UIViewController {
 
         descriptionLabel
             .pin(to: view.safeAreaLayoutGuide)
-            .leadingEdges(constant: 20)
-            .trailingEdges(constant: -20)
-            .bottomEdges()
+            .pinLeadingEdges(constant: 20)
+            .pinTrailingEdges(constant: -20)
+            .pinBottomEdges()
             .activate()
 
         descriptionLabel
             .pin(to: contentView)
-            .below()
+            .pinBelow()
             .activate()
 
         viewDecorator.decorate(view: contentView, descriptionLabel: descriptionLabel)

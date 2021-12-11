@@ -20,18 +20,18 @@ struct EdgeViewDecorator: ViewDecorator {
         container
             .addToSuperview(view)
             .pin(to: view)
-            .centers()
-            .equalWidths(multiplier: 0.25)
-            .equalHeights(multiplier: 0.25)
+            .pinCenters()
+            .pinWidths(multiplier: 0.25)
+            .pinHeights(multiplier: 0.25)
             .activate()
 
         nested
             .addToSuperview(container)
             .pin(to: container)
-            .leadingEdges(constant: 10)
-            .trailingEdges(constant: -10)
-            .topEdges(constant: 10)
-            .bottomEdges(constant: -10)
+            .pinLeadingEdges(constant: 10)
+            .pinTrailingEdges(constant: -10)
+            .pinTopEdges(constant: 10)
+            .pinBottomEdges(constant: -10)
             .activate()
 
         descriptionLabel.text = "This demonstrates how the leading, trailing, top, and bottom edges of a primary view can be pinned to the edges of a secondary view. In this example constants are applied to each edge so the nested view is smaller than the containing view."

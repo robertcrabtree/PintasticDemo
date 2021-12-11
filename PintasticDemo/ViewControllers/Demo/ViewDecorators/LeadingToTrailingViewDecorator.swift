@@ -20,8 +20,8 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
         left
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
-            .equalWidths(multiplier: 0.25)
-            .verticalCenters()
+            .pinWidths(multiplier: 0.25)
+            .pinVerticalCenters()
             .activate()
 
         left
@@ -32,8 +32,8 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
         center
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
-            .equalWidths(multiplier: 0.25)
-            .centers()
+            .pinWidths(multiplier: 0.25)
+            .pinCenters()
             .activate()
 
         center
@@ -44,8 +44,8 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
         right
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
-            .equalWidths(multiplier: 0.25)
-            .verticalCenters()
+            .pinWidths(multiplier: 0.25)
+            .pinVerticalCenters()
             .activate()
 
         right
@@ -55,12 +55,12 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
 
         left
             .pin(to: center)
-            .before(constant: -10)
+            .pinToLeft(constant: -10)
             .activate()
 
         right
             .pin(to: center)
-            .after(constant: 10)
+            .pinToRight(constant: 10)
             .activate()
 
         descriptionLabel.text = "This demonstrates how the trailing edge of a primary view can be pinned to the leading edge of a secondary view and how the leading edge of a primary view can be pinned to the trailing edge of a secondary view."

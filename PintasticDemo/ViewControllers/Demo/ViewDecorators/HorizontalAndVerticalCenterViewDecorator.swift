@@ -20,9 +20,9 @@ struct HorizontalAndVerticalCenterViewDecorator: ViewDecorator {
         container
             .addToSuperview(view)
             .pin(to: view)
-            .horizontalCenters()
-            .verticalCenters()
-            .equalWidths(multiplier: 0.25)
+            .pinHorizontalCenters()
+            .pinVerticalCenters()
+            .pinWidths(multiplier: 0.25)
             .activate()
 
         container
@@ -33,10 +33,10 @@ struct HorizontalAndVerticalCenterViewDecorator: ViewDecorator {
         nested
             .addToSuperview(container)
             .pin(to: container)
-            .equalWidths(multiplier: 0.25)
-            .equalHeights(multiplier: 0.25)
-            .horizontalCenters(multiplier: 0.5)
-            .verticalCenters(multiplier: 0.5)
+            .pinWidths(multiplier: 0.25)
+            .pinHeights(multiplier: 0.25)
+            .pinHorizontalCenters(multiplier: 0.5)
+            .pinVerticalCenters(multiplier: 0.5)
             .activate()
 
         descriptionLabel.text = "This demonstrates how the horizontal and vertical centers of the primary view can be pinned to the horizontal and vertical centers of the secondary view. In this example the nested view applies a multipler to offset the center from containing view."

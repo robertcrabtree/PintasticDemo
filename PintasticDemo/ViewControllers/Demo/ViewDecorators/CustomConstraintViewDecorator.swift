@@ -17,7 +17,7 @@ struct CustomConstraintViewDecorator: ViewDecorator {
         customView
             .addToSuperview(view)
             .pin(to: view)
-            .centers()
+            .pinCenters()
             .addConstraint(withIdentifier: "width", constraint: {
                 customView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.25)
             })

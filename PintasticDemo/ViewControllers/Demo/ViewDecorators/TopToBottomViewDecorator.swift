@@ -20,8 +20,8 @@ struct TopToBottomViewDecorator: ViewDecorator {
         top
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
-            .equalWidths(multiplier: 0.25)
-            .horizontalCenters()
+            .pinWidths(multiplier: 0.25)
+            .pinHorizontalCenters()
             .activate()
 
         top
@@ -32,8 +32,8 @@ struct TopToBottomViewDecorator: ViewDecorator {
         center
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
-            .equalWidths(multiplier: 0.25)
-            .centers()
+            .pinWidths(multiplier: 0.25)
+            .pinCenters()
             .activate()
 
         center
@@ -44,8 +44,8 @@ struct TopToBottomViewDecorator: ViewDecorator {
         bottom
             .addToSuperview(view)
             .pin(to: view.safeAreaLayoutGuide)
-            .equalWidths(multiplier: 0.25)
-            .horizontalCenters()
+            .pinWidths(multiplier: 0.25)
+            .pinHorizontalCenters()
             .activate()
 
         bottom
@@ -55,13 +55,13 @@ struct TopToBottomViewDecorator: ViewDecorator {
 
         top
             .pin(to: center)
-            .above(constant: -10)
+            .pinAbove(constant: -10)
             .activate()
 
 
         bottom
             .pin(to: center)
-            .below(constant: 10)
+            .pinBelow(constant: 10)
             .activate()
 
         descriptionLabel.text = "This demonstrates how the bottom edge of a primary view can be pinned to the top edge of a secondary view and how the top edge of a primary view can be pinned to the bottom edge of a secondary view."

@@ -25,7 +25,7 @@ struct EqualWidthsAndHeightsViewDecorator: ViewDecorator {
         stack
             .addToSuperview(view)
             .pin(to: view)
-            .centers()
+            .pinCenters()
             .activate()
 
         let left = makeView(EqualWidthsAndHeightsDemoAccessibility.leftView, color: palette.next())
@@ -36,14 +36,14 @@ struct EqualWidthsAndHeightsViewDecorator: ViewDecorator {
 
         left
             .pin(to: view)
-            .equalWidths(multiplier: 0.25)
-            .equalHeights(multiplier: 0.25)
+            .pinWidths(multiplier: 0.25)
+            .pinHeights(multiplier: 0.25)
             .activate()
 
         right
             .pin(to: left)
-            .equalWidths()
-            .equalHeights()
+            .pinWidths()
+            .pinHeights()
             .activate()
 
         descriptionLabel.text = "This demonstrates how the width and height of the primary view can be pinned to the width and height of the secondary view."

@@ -25,7 +25,7 @@ struct WidthToHeightViewDecorator: ViewDecorator {
         stack
             .addToSuperview(view)
             .pin(to: view)
-            .centers()
+            .pinCenters()
             .activate()
 
         let topView = makeView(WidthToHeightDemoAccessibility.leftView, color: palette.next())
@@ -36,7 +36,7 @@ struct WidthToHeightViewDecorator: ViewDecorator {
 
         topView
             .pin(to: view)
-            .equalWidths(multiplier: 0.25)
+            .pinWidths(multiplier: 0.25)
             .activate()
 
         topView
@@ -46,7 +46,7 @@ struct WidthToHeightViewDecorator: ViewDecorator {
 
         bottomView
             .pin(to: view)
-            .equalWidths(multiplier: 0.25)
+            .pinWidths(multiplier: 0.25)
             .activate()
 
         bottomView

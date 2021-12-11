@@ -39,7 +39,7 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
         topLeft
             .addToSuperview(view)
             .pin(to: view)
-            .equalWidths(multiplier: 0.25 * 2.0 / 3.0)
+            .pinWidths(multiplier: 0.25 * 2.0 / 3.0)
             .activate()
 
         topLeft
@@ -50,43 +50,43 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
         topRight
             .addToSuperview(view)
             .pin(to: topLeft)
-            .equalWidths()
-            .equalHeights()
-            .leadingEdgeToHorizontalCenter()
-            .topEdges()
+            .pinWidths()
+            .pinHeights()
+            .pinLeadingEdgeToHorizontalCenter()
+            .pinTopEdges()
             .activate()
 
         bottomRight
             .addToSuperview(view)
             .pin(to: topRight)
-            .equalWidths()
-            .equalHeights()
-            .leadingEdges()
-            .topEdgeToVerticalCenter()
+            .pinWidths()
+            .pinHeights()
+            .pinLeadingEdges()
+            .pinTopEdgeToVerticalCenter()
             .activate()
 
         bottomLeft
             .addToSuperview(view)
             .pin(to: bottomRight)
-            .equalWidths()
-            .equalHeights()
-            .trailingEdgeToHorizontalCenter()
-            .bottomEdges()
+            .pinWidths()
+            .pinHeights()
+            .pinTrailingEdgeToHorizontalCenter()
+            .pinBottomEdges()
             .activate()
 
         center
             .addToSuperview(view)
             .pin(to: view)
-            .horizontalCenters()
-            .verticalCenters()
+            .pinHorizontalCenters()
+            .pinVerticalCenters()
             .activate()
 
         center
             .pin(to: topLeft)
-            .equalWidths(multiplier: 0.5)
-            .equalHeights(multiplier: 0.5)
-            .leadingEdgeToHorizontalCenter()
-            .topEdgeToVerticalCenter()
+            .pinWidths(multiplier: 0.5)
+            .pinHeights(multiplier: 0.5)
+            .pinLeadingEdgeToHorizontalCenter()
+            .pinTopEdgeToVerticalCenter()
             .activate()
 
         descriptionLabel.text = "This demonstrates how the leading, trailing, top, and bottom edges of a primary view can be pinned to the center of a secondary view."

@@ -32,10 +32,10 @@ class MenuCell: UITableViewCell, CellIdentifiable {
 
         demoTitleLabel
             .pin(to: contentView)
-            .leadingEdges(constant: 10)
-            .trailingEdges(constant: -10)
-            .topEdges(constant: 10)
-            .bottomEdges(constant: -10)
+            .pinLeadingEdges(constant: 10)
+            .pinTrailingEdges(constant: -10)
+            .pinTopEdges(constant: 10)
+            .pinBottomEdges(constant: -10)
             .activate()
     }
 
