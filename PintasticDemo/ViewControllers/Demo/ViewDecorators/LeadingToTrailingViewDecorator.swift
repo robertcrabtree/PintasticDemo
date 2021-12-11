@@ -19,47 +19,47 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
 
         left
             .addToSuperview(view)
-            .pin(to: view.safeAreaLayoutGuide)
+            .makePin(to: view.safeAreaLayoutGuide)
             .pinWidths(multiplier: 0.25)
             .pinVerticalCenters()
             .activate()
 
         left
-            .pin()
+            .makePin()
             .pinWidthEqualToHeight()
             .activate()
 
         center
             .addToSuperview(view)
-            .pin(to: view.safeAreaLayoutGuide)
+            .makePin(to: view.safeAreaLayoutGuide)
             .pinWidths(multiplier: 0.25)
             .pinCenters()
             .activate()
 
         center
-            .pin()
+            .makePin()
             .pinWidthEqualToHeight()
             .activate()
 
         right
             .addToSuperview(view)
-            .pin(to: view.safeAreaLayoutGuide)
+            .makePin(to: view.safeAreaLayoutGuide)
             .pinWidths(multiplier: 0.25)
             .pinVerticalCenters()
             .activate()
 
         right
-            .pin()
+            .makePin()
             .pinHeightEqualToWidth()
             .activate()
 
         left
-            .pin(to: center)
+            .makePin(to: center)
             .pinToLeft(constant: -10)
             .activate()
 
         right
-            .pin(to: center)
+            .makePin(to: center)
             .pinToRight(constant: 10)
             .activate()
 

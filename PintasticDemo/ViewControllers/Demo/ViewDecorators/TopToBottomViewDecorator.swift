@@ -19,48 +19,48 @@ struct TopToBottomViewDecorator: ViewDecorator {
 
         top
             .addToSuperview(view)
-            .pin(to: view.safeAreaLayoutGuide)
+            .makePin(to: view.safeAreaLayoutGuide)
             .pinWidths(multiplier: 0.25)
             .pinHorizontalCenters()
             .activate()
 
         top
-            .pin()
+            .makePin()
             .pinHeightEqualToWidth()
             .activate()
 
         center
             .addToSuperview(view)
-            .pin(to: view.safeAreaLayoutGuide)
+            .makePin(to: view.safeAreaLayoutGuide)
             .pinWidths(multiplier: 0.25)
             .pinCenters()
             .activate()
 
         center
-            .pin()
+            .makePin()
             .pinHeightEqualToWidth()
             .activate()
 
         bottom
             .addToSuperview(view)
-            .pin(to: view.safeAreaLayoutGuide)
+            .makePin(to: view.safeAreaLayoutGuide)
             .pinWidths(multiplier: 0.25)
             .pinHorizontalCenters()
             .activate()
 
         bottom
-            .pin()
+            .makePin()
             .pinHeightEqualToWidth()
             .activate()
 
         top
-            .pin(to: center)
+            .makePin(to: center)
             .pinAbove(constant: -10)
             .activate()
 
 
         bottom
-            .pin(to: center)
+            .makePin(to: center)
             .pinBelow(constant: 10)
             .activate()
 

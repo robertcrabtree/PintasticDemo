@@ -19,20 +19,20 @@ struct HorizontalAndVerticalCenterViewDecorator: ViewDecorator {
 
         container
             .addToSuperview(view)
-            .pin(to: view)
+            .makePin(to: view)
             .pinHorizontalCenters()
             .pinVerticalCenters()
             .pinWidths(multiplier: 0.25)
             .activate()
 
         container
-            .pin()
+            .makePin()
             .pinHeightEqualToWidth()
             .activate()
 
         nested
             .addToSuperview(container)
-            .pin(to: container)
+            .makePin(to: container)
             .pinWidths(multiplier: 0.25)
             .pinHeights(multiplier: 0.25)
             .pinHorizontalCenters(multiplier: 0.5)

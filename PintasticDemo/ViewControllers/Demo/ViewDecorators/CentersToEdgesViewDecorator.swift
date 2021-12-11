@@ -38,18 +38,18 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
 
         topLeft
             .addToSuperview(view)
-            .pin(to: view)
+            .makePin(to: view)
             .pinWidths(multiplier: 0.25 * 2.0 / 3.0)
             .activate()
 
         topLeft
-            .pin()
+            .makePin()
             .pinWidthEqualToHeight()
             .activate()
 
         topRight
             .addToSuperview(view)
-            .pin(to: topLeft)
+            .makePin(to: topLeft)
             .pinWidths()
             .pinHeights()
             .pinLeadingEdgeToHorizontalCenter()
@@ -58,7 +58,7 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
 
         bottomRight
             .addToSuperview(view)
-            .pin(to: topRight)
+            .makePin(to: topRight)
             .pinWidths()
             .pinHeights()
             .pinLeadingEdges()
@@ -67,7 +67,7 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
 
         bottomLeft
             .addToSuperview(view)
-            .pin(to: bottomRight)
+            .makePin(to: bottomRight)
             .pinWidths()
             .pinHeights()
             .pinTrailingEdgeToHorizontalCenter()
@@ -76,13 +76,13 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
 
         center
             .addToSuperview(view)
-            .pin(to: view)
+            .makePin(to: view)
             .pinHorizontalCenters()
             .pinVerticalCenters()
             .activate()
 
         center
-            .pin(to: topLeft)
+            .makePin(to: topLeft)
             .pinWidths(multiplier: 0.5)
             .pinHeights(multiplier: 0.5)
             .pinLeadingEdgeToHorizontalCenter()
