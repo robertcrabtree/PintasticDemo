@@ -64,7 +64,7 @@ class DemoViewController: UIViewController {
 
         contentView
             .pin()
-            .widthEqualToHeight()
+            .pinWidthEqualToHeight()
             .activate()
 
         descriptionLabel

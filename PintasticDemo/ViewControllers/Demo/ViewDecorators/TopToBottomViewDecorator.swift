@@ -26,7 +26,7 @@ struct TopToBottomViewDecorator: ViewDecorator {
 
         top
             .pin()
-            .heightEqualToWidth()
+            .pinHeightEqualToWidth()
             .activate()
 
         center
@@ -38,7 +38,7 @@ struct TopToBottomViewDecorator: ViewDecorator {
 
         center
             .pin()
-            .heightEqualToWidth()
+            .pinHeightEqualToWidth()
             .activate()
 
         bottom
@@ -50,7 +50,7 @@ struct TopToBottomViewDecorator: ViewDecorator {
 
         bottom
             .pin()
-            .heightEqualToWidth()
+            .pinHeightEqualToWidth()
             .activate()
 
         top

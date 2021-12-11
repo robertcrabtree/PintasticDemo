@@ -27,7 +27,7 @@ struct HorizontalAndVerticalCenterViewDecorator: ViewDecorator {
 
         container
             .pin()
-            .heightEqualToWidth()
+            .pinHeightEqualToWidth()
             .activate()
 
         nested

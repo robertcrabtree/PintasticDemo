@@ -44,7 +44,7 @@ struct CentersToEdgesViewDecorator: ViewDecorator {
 
         topLeft
             .pin()
-            .widthEqualToHeight()
+            .pinWidthEqualToHeight()
             .activate()
 
         topRight

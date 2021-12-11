@@ -26,7 +26,7 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
 
         left
             .pin()
-            .widthEqualToHeight()
+            .pinWidthEqualToHeight()
             .activate()
 
         center
@@ -38,7 +38,7 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
 
         center
             .pin()
-            .widthEqualToHeight()
+            .pinWidthEqualToHeight()
             .activate()
 
         right
@@ -50,7 +50,7 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
 
         right
             .pin()
-            .heightEqualToWidth()
+            .pinHeightEqualToWidth()
             .activate()
 
         left
