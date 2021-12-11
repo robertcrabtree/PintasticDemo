@@ -55,12 +55,12 @@ struct LeadingToTrailingViewDecorator: ViewDecorator {
 
         left
             .pin(to: center)
-            .pinToLeft(constant: -10)
+            .pinBefore(constant: -10)
             .activate()
 
         right
             .pin(to: center)
-            .pinToRight(constant: 10)
+            .pinAfter(constant: 10)
             .activate()
 
         descriptionLabel.text = "This demonstrates how the trailing edge of a primary view can be pinned to the leading edge of a secondary view and how the leading edge of a primary view can be pinned to the trailing edge of a secondary view."

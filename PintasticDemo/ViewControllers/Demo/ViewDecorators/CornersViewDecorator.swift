@@ -38,7 +38,7 @@ struct CornersViewDecorator: ViewDecorator {
             .pinWidths()
             .pinHeights()
             .pinAbove()
-            .pinToLeft()
+            .pinBefore()
             .activate()
 
         topRight
@@ -47,7 +47,7 @@ struct CornersViewDecorator: ViewDecorator {
             .pinWidths()
             .pinHeights()
             .pinAbove()
-            .pinToRight()
+            .pinAfter()
             .activate()
 
         bottomRight
@@ -56,7 +56,7 @@ struct CornersViewDecorator: ViewDecorator {
             .pinWidths()
             .pinHeights()
             .pinBelow()
-            .pinToRight()
+            .pinAfter()
             .activate()
 
         bottomLeft
@@ -65,7 +65,7 @@ struct CornersViewDecorator: ViewDecorator {
             .pinWidths()
             .pinHeights()
             .pinBelow()
-            .pinToLeft()
+            .pinBefore()
             .activate()
 
         descriptionLabel.text = "This demonstrates how a primary view can be pinned above, below, to the left, and to the rigfht of a secondary view."
