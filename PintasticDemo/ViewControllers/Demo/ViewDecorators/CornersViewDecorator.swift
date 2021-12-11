@@ -22,19 +22,19 @@ struct CornersViewDecorator: ViewDecorator {
 
         center
             .addToSuperview(view)
-            .pin(to: view)
+            .makePin(to: view)
             .pinWidths(multiplier: 0.25)
             .pinCenters()
             .activate()
 
         center
-            .pin()
+            .makePin()
             .pinHeightEqualToWidth()
             .activate()
 
         topLeft
             .addToSuperview(view)
-            .pin(to: center)
+            .makePin(to: center)
             .pinWidths()
             .pinHeights()
             .pinAbove()
@@ -43,7 +43,7 @@ struct CornersViewDecorator: ViewDecorator {
 
         topRight
             .addToSuperview(view)
-            .pin(to: center)
+            .makePin(to: center)
             .pinWidths()
             .pinHeights()
             .pinAbove()
@@ -52,7 +52,7 @@ struct CornersViewDecorator: ViewDecorator {
 
         bottomRight
             .addToSuperview(view)
-            .pin(to: center)
+            .makePin(to: center)
             .pinWidths()
             .pinHeights()
             .pinBelow()
@@ -61,7 +61,7 @@ struct CornersViewDecorator: ViewDecorator {
 
         bottomLeft
             .addToSuperview(view)
-            .pin(to: center)
+            .makePin(to: center)
             .pinWidths()
             .pinHeights()
             .pinBelow()
