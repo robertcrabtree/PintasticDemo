@@ -24,7 +24,7 @@ class MenuCell: UITableViewCell, CellIdentifiable {
 
         demoTitleLabel
             .makePin()
-            .pinHeight(constant: 44)
+            .pin(height: 44)
             .constraint(ofType: .height, handler: { constraint in
                 constraint?.priority = .defaultHigh
             })
